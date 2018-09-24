@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "urlDecoder", "urlDecoder\urlDecoder.csproj", "{CF3AC183-93BA-4608-B8D8-48E14526697A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlDecoder", "urlDecoder\UrlDecoder.csproj", "{CF3AC183-93BA-4608-B8D8-48E14526697A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "requestParser", "requestParser\requestParser.csproj", "{333D09E1-6A5E-4E37-A99B-8353DBD5F8B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestParser", "requestParser\RequestParser.csproj", "{333D09E1-6A5E-4E37-A99B-8353DBD5F8B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidateURL", "ValidateURL\ValidateURL.csproj", "{FF1C363F-78AF-4BA6-BC3E-1BCAE627C3ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{333D09E1-6A5E-4E37-A99B-8353DBD5F8B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{333D09E1-6A5E-4E37-A99B-8353DBD5F8B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{333D09E1-6A5E-4E37-A99B-8353DBD5F8B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF1C363F-78AF-4BA6-BC3E-1BCAE627C3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF1C363F-78AF-4BA6-BC3E-1BCAE627C3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF1C363F-78AF-4BA6-BC3E-1BCAE627C3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF1C363F-78AF-4BA6-BC3E-1BCAE627C3ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

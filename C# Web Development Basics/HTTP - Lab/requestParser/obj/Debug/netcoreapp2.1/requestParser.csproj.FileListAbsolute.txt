@@ -1,0 +1,10 @@
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\requestParser\obj\Debug\netcoreapp2.1\requestParser.csproj.CoreCompileInputs.cache
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\requestParser\obj\Debug\netcoreapp2.1\requestParser.AssemblyInfoInputs.cache
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\requestParser\obj\Debug\netcoreapp2.1\requestParser.AssemblyInfo.cs
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\requestParser\bin\Debug\netcoreapp2.1\requestParser.deps.json
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\requestParser\bin\Debug\netcoreapp2.1\requestParser.runtimeconfig.json
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\requestParser\bin\Debug\netcoreapp2.1\requestParser.runtimeconfig.dev.json
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\requestParser\bin\Debug\netcoreapp2.1\requestParser.dll
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\requestParser\bin\Debug\netcoreapp2.1\requestParser.pdb
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\requestParser\obj\Debug\netcoreapp2.1\requestParser.dll
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\requestParser\obj\Debug\netcoreapp2.1\requestParser.pdb

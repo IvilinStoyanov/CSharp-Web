@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\CSharp-Web\\C# Web Development Basics\\HTTP - Lab\\requestParser\\requestParser.csproj",
-      "projectName": "requestParser",
-      "projectPath": "D:\\GitHub\\CSharp-Web\\C# Web Development Basics\\HTTP - Lab\\requestParser\\requestParser.csproj",
+      "projectUniqueName": "D:\\GitHub\\CSharp-Web\\C# Web Development Basics\\HTTP - Lab\\ValidateURL\\ValidateURL.csproj",
+      "projectName": "ValidateURL",
+      "projectPath": "D:\\GitHub\\CSharp-Web\\C# Web Development Basics\\HTTP - Lab\\ValidateURL\\ValidateURL.csproj",
       "packagesPath": "C:\\Users\\Gigabyte\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\CSharp-Web\\C# Web Development Basics\\HTTP - Lab\\requestParser\\obj\\",
+      "outputPath": "D:\\GitHub\\CSharp-Web\\C# Web Development Basics\\HTTP - Lab\\ValidateURL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

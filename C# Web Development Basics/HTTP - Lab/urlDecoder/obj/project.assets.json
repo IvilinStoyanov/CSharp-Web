@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\CSharp-Web\\HTTP - Lab\\urlDecoder\\urlDecoder.csproj",
+      "projectUniqueName": "D:\\GitHub\\CSharp-Web\\C# Web Development Basics\\HTTP - Lab\\urlDecoder\\urlDecoder.csproj",
       "projectName": "urlDecoder",
-      "projectPath": "D:\\GitHub\\CSharp-Web\\HTTP - Lab\\urlDecoder\\urlDecoder.csproj",
+      "projectPath": "D:\\GitHub\\CSharp-Web\\C# Web Development Basics\\HTTP - Lab\\urlDecoder\\urlDecoder.csproj",
       "packagesPath": "C:\\Users\\Gigabyte\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\CSharp-Web\\HTTP - Lab\\urlDecoder\\obj\\",
+      "outputPath": "D:\\GitHub\\CSharp-Web\\C# Web Development Basics\\HTTP - Lab\\urlDecoder\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

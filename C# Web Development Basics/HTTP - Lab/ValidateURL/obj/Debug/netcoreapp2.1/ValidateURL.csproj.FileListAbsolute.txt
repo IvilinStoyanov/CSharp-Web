@@ -1,0 +1,10 @@
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\ValidateURL\bin\Debug\netcoreapp2.1\ValidateURL.deps.json
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\ValidateURL\bin\Debug\netcoreapp2.1\ValidateURL.runtimeconfig.json
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\ValidateURL\bin\Debug\netcoreapp2.1\ValidateURL.runtimeconfig.dev.json
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\ValidateURL\bin\Debug\netcoreapp2.1\ValidateURL.dll
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\ValidateURL\bin\Debug\netcoreapp2.1\ValidateURL.pdb
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\ValidateURL\obj\Debug\netcoreapp2.1\ValidateURL.csproj.CoreCompileInputs.cache
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\ValidateURL\obj\Debug\netcoreapp2.1\ValidateURL.AssemblyInfoInputs.cache
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\ValidateURL\obj\Debug\netcoreapp2.1\ValidateURL.AssemblyInfo.cs
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\ValidateURL\obj\Debug\netcoreapp2.1\ValidateURL.dll
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP - Lab\ValidateURL\obj\Debug\netcoreapp2.1\ValidateURL.pdb

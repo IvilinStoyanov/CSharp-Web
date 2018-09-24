@@ -1,33 +1,73 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Text;
 
-namespace requestParser
+namespace RequestParser
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            var routes = new Dictionary<string, HashSet<string>>();
+            var validUrlMethods = ReadValidUrls();
+            ProcessHttpRequest(validUrlMethods);
+        }
 
-            var input = Console.ReadLine();
+        private static void ProcessHttpRequest(Dictionary<string, HashSet<string>> validUrlMethods)
+        {
+            // Read the HTTP Request
+            var requestInput = Console.ReadLine();
 
-            while(input != "END")
+            var requestTokens = requestInput.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            var requestMethod = requestTokens[0].ToLower();
+            var requestUrl = requestTokens[1];
+            var requestProtocol = requestTokens[2];
+
+            var statusCode = validUrlMethods.ContainsKey(requestUrl) &&
+                             validUrlMethods[requestUrl].Contains(requestMethod)
+                             ? HttpStatusCode.OK
+                             : HttpStatusCode.NotFound;
+
+            var builder = new StringBuilder();
+            builder
+                .AppendLine($"{requestProtocol} {(int)statusCode} {statusCode}")
+                .AppendLine($"Content-Length: {statusCode.ToString().Length}")
+                .AppendLine($"Content-Type: text/plain" + Environment.NewLine)
+                .AppendLine($"{statusCode}");
+
+            Console.WriteLine(builder.ToString().Trim());
+        }
+
+        private static Dictionary<string, HashSet<string>> ReadValidUrls()
+        {
+            var validUrls = new Dictionary<string, HashSet<string>>();
+
+            while (true)
             {
-                var splitInput = input.Split("/", StringSplitOptions.RemoveEmptyEntries);
+                // Read input till "END"
+                var input = Console.ReadLine();
 
-                var httpMethod = splitInput[1];
-                var endPoint = splitInput[0];
-
-                if(!routes.ContainsKey(httpMethod))
+                if (input == "END")
                 {
-                    routes.Add(httpMethod, new HashSet<string>());
+                    break;
                 }
-                routes[httpMethod].Add(endPoint);
 
-                input = Console.ReadLine();
+                var inputTokens = input.Split('/', StringSplitOptions.RemoveEmptyEntries);
+                var path = inputTokens[0];
+                var method = inputTokens[1].ToLower();
+                var fullPath = "/" + path;
+
+                if (!validUrls.ContainsKey(fullPath))
+                {
+                    validUrls[fullPath] = new HashSet<string>();
+                }
+
+                validUrls[fullPath].Add(method);
             }
 
-            var requestString = Console.ReadLine();
+            return validUrls;
         }
     }
 }
+

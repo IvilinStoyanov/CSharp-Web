@@ -1,12 +1,18 @@
 ﻿using System;
+using System.Net;
 
-namespace urlDecoder
+namespace UrlDecoder
 {
-    class Program
+   public class Program
     {
-        static void Main(string[] args)
+      public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // Read input
+            var input = Console.ReadLine();
+
+            // Decode URl with WebUtility
+            var decodedURL = WebUtility.UrlDecode(input);
+            Console.WriteLine(decodedURL);
         }
     }
 }
