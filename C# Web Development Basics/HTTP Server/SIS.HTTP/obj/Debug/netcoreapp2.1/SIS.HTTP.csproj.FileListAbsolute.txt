@@ -1,0 +1,9 @@
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP Server\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.csprojAssemblyReference.cache
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP Server\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.csproj.CoreCompileInputs.cache
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP Server\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.AssemblyInfoInputs.cache
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP Server\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.AssemblyInfo.cs
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP Server\SIS.HTTP\bin\Debug\netcoreapp2.1\SIS.HTTP.deps.json
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP Server\SIS.HTTP\bin\Debug\netcoreapp2.1\SIS.HTTP.dll
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP Server\SIS.HTTP\bin\Debug\netcoreapp2.1\SIS.HTTP.pdb
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP Server\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.dll
+D:\GitHub\CSharp-Web\C# Web Development Basics\HTTP Server\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.pdb

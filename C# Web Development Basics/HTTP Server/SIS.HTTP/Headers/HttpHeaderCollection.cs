@@ -11,7 +11,7 @@ namespace SIS.HTTP.Headers
 
         public HttpHeaderCollection()
         {
-            this.headers = new Dictionary<string, HttpHeader>();    
+            this.headers = new Dictionary<string, HttpHeader>();
         }
 
         public void Add(HttpHeader header)
@@ -29,7 +29,7 @@ namespace SIS.HTTP.Headers
 
         public bool ContainsHeader(string key)
         {
-            if(string.IsNullOrEmpty(key))
+            if (string.IsNullOrEmpty(key))
             {
                 throw new ArgumentException($"{nameof(key)} cannot be null");
             }
@@ -39,7 +39,7 @@ namespace SIS.HTTP.Headers
 
         public HttpHeader GetHeader(string key)
         {
-            if(string.IsNullOrEmpty(key))
+            if (string.IsNullOrEmpty(key))
             {
                 throw new ArgumentException($"{nameof(key)} cannot be null");
             }
@@ -50,5 +50,6 @@ namespace SIS.HTTP.Headers
         public override string ToString()
         {
             return string.Join(Environment.NewLine, this.headers.Values);
+        }
     }
 }
