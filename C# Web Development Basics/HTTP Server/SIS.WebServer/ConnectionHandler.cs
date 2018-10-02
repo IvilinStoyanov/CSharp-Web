@@ -1,6 +1,4 @@
-﻿using SIS.HTTP.Enums;
-using SIS.HTTP.Requests;
-using SIS.HTTP.Requests.Contracts;
+﻿using SIS.HTTP.Requests.Contracts;
 using SIS.HTTP.Responses;
 using SIS.HTTP.Responses.Contracts;
 using SIS.WebServer.Routing;
@@ -82,7 +80,6 @@ namespace SIS.WebServer
 
                 await this.PrepareResponse(httpResponse);
             }
-
             this.client.Shutdown(SocketShutdown.Both);
         }
     }

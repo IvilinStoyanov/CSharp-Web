@@ -30,21 +30,21 @@ namespace SIS.WebServer
             this.listener.Start();
             this.isRunning = true;
 
-           Console.WriteLine($"Server started at http://{LocalhostIpAddress}:{this.port}");
+            Console.WriteLine($"Server started at http//{LocalhostIpAddress}:{this.port}");
+            while (isRunning)
+            {
+                var client = listener.AcceptSocketAsync().Result;
 
-            var task = Task.Run(this.ListenLoop);
-            task.Wait();
+                Task.Run(() => Listen(client));
+            }
         }
 
-        public async Task ListenLoop()
+        public async void Listen(Socket client)
         {
-            while (this.isRunning)
-            {
-                var client = await this.listener.AcceptSocketAsync();
-                var connectionHandler = new ConnectionHandler(client, this.serverRoutingTable);
-                var responseTask = connectionHandler.ProccesRequestAsync();
-                responseTask.Wait();           
-            }
+            var connectionHandler = new ConnectionHandler(client, this.serverRoutingTable);
+            await connectionHandler.ProccesRequestAsync();
         }
     }
 }
+
+
