@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using SIS.HTTP.Common;
+using SIS.HTTP.Cookies;
+using SIS.HTTP.Cookies.Contracts;
 using SIS.HTTP.Enums;
 using SIS.HTTP.Exceptions;
 using SIS.HTTP.Headers;
 using SIS.HTTP.Headers.Contracts;
 using SIS.HTTP.Requests.Contracts;
+using SIS.HTTP.Session.Contracts;
 
 public class HttpRequest : IHttpRequest
 {
@@ -16,6 +19,7 @@ public class HttpRequest : IHttpRequest
         this.FormData = new Dictionary<string, object>();
         this.QueryData = new Dictionary<string, object>();
         this.Headers = new HttpHeaderCollection();
+        this.Cookies = new HttpCookieCollection();
 
         this.ParseRequest(requestString);
     }
@@ -32,6 +36,9 @@ public class HttpRequest : IHttpRequest
 
     public HttpRequestMethod RequestMethod { get; private set; }
 
+    public IHttpCookieCollection Cookies { get; }
+
+    public IHttpSession Session { get; set; }
 
     private void ParseRequest(string requestString)
     {
@@ -56,9 +63,41 @@ public class HttpRequest : IHttpRequest
 
         this.ParseHeaders(splitRequestContent.Skip(1).ToArray());
 
+        this.ParseCookies();
+
         string queryParams = splitRequestContent[splitRequestContent.Length - 1];
 
         this.ParseRequestParameters(queryParams);
+    }
+
+    private void ParseCookies()
+    {
+        if (!this.Headers.ContainsHeader(GlobalConstants.CookieRequestHeaderName))
+        {
+            return;
+        }
+
+        var cookiesRaw = this.Headers
+            .GetHeader(GlobalConstants.CookieRequestHeaderName)
+            .Value;
+
+        var cookies = cookiesRaw
+            .Split("; ", StringSplitOptions.RemoveEmptyEntries);
+
+        foreach (var rawCookie in cookies)
+        {
+            var cookieKeyValuePair = rawCookie.Split("=", 2);
+
+            if (cookieKeyValuePair.Length !=
+                GlobalConstants.NumberOfParametersInRequestOfKeyValuePair)
+            {
+                throw new BadRequestException();
+            }
+
+            var cookieName = cookieKeyValuePair[0];
+            var cookieValue = cookieKeyValuePair[1];
+            this.Cookies.Add(new HttpCookie(cookieName, cookieValue));
+        }
     }
 
     private void ParseRequestParameters(string bodyParams)
@@ -76,10 +115,9 @@ public class HttpRequest : IHttpRequest
 
 
     }
-    //TODO check this one!and FormDataParams!
+
     private void ParseQueryParameters()
     {
-
         if (!this.Url.Contains("?"))
         {
             return;
@@ -90,12 +128,6 @@ public class HttpRequest : IHttpRequest
             .Take(1)
             .ToArray()[0];
 
-        // if (string.IsNullOrEmpty(queryParams))
-        // {
-        //     throw  new BadRequestException();
-        // }
-
-
         var queryKeyValuePairs = queryParams.Split('&', StringSplitOptions.RemoveEmptyEntries);
 
         FillData(queryKeyValuePairs, this.QueryData);
@@ -104,8 +136,6 @@ public class HttpRequest : IHttpRequest
 
     private void ParseFormDataParams(string bodyParams)
     {
-
-
         var dataParams = bodyParams.Split('&', StringSplitOptions.RemoveEmptyEntries);
 
         FillData(dataParams, this.FormData);
@@ -115,20 +145,19 @@ public class HttpRequest : IHttpRequest
     {
         foreach (var queryPair in dataParams)
         {
-            var queryKvp = queryPair.Split(new[] { '=' }, StringSplitOptions.RemoveEmptyEntries);
+            var queryKeyValuePair = queryPair.Split(new[] { '=' }, StringSplitOptions.RemoveEmptyEntries);
 
-            if (queryKvp.Length != 2)
+            if (queryKeyValuePair.Length != GlobalConstants.NumberOfParametersInRequestOfKeyValuePair)
             {
                 throw new BadRequestException();
             }
 
-            var dataFormKey = WebUtility.UrlDecode(queryKvp[0]);
-            var dataFormValue = WebUtility.UrlDecode(queryKvp[1]);
+            var dataFormKey = WebUtility.UrlDecode(queryKeyValuePair[0]);
+            var dataFormValue = WebUtility.UrlDecode(queryKeyValuePair[1]);
 
             data[dataFormKey] = dataFormValue;
         }
     }
-
 
     private void ParseHeaders(string[] headers)
     {

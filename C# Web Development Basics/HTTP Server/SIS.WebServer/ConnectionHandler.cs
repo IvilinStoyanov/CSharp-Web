@@ -1,6 +1,8 @@
-﻿using SIS.HTTP.Requests.Contracts;
+﻿using SIS.HTTP.Cookies;
+using SIS.HTTP.Requests.Contracts;
 using SIS.HTTP.Responses;
 using SIS.HTTP.Responses.Contracts;
+using SIS.HTTP.Session;
 using SIS.WebServer.Routing;
 using System;
 using System.Net;
@@ -19,6 +21,8 @@ namespace SIS.WebServer
         }
 
         private readonly Socket client;
+
+        private readonly HttpSessionStorage sessionStorage;
 
         private readonly ServerRoutingTable serverRoutingTable;
 
@@ -76,11 +80,45 @@ namespace SIS.WebServer
 
             if (httpRequest != null)
             {
+                string sessionId = this.SetRequestSession(httpRequest);
+
                 var httpResponse = this.HandleRequest(httpRequest);
+
+                this.SetResponseSession(httpResponse, sessionId);
 
                 await this.PrepareResponse(httpResponse);
             }
             this.client.Shutdown(SocketShutdown.Both);
+        }
+
+        private string SetRequestSession(IHttpRequest request)
+        {
+            string sessionId = null;
+
+            if (request.Cookies.ContainsCookie(HttpSessionStorage.SeesionCookieKey))
+            {
+                var cookie = request.Cookies.GetCookie(HttpSessionStorage.SeesionCookieKey);
+                sessionId = cookie.Value;
+                request.Session = HttpSessionStorage.GetSession(sessionId);
+            }
+            else
+            {
+                sessionId = Guid.NewGuid().ToString();
+                request.Session = HttpSessionStorage.GetSession(sessionId);
+            }
+
+            return sessionId;
+        }
+
+        private void SetResponseSession(IHttpResponse httpResponse, string sessionId)
+        {
+            if(sessionId != null )
+            {
+                httpResponse
+                    .AddCookie(
+                    new HttpCookie(HttpSessionStorage.SeesionCookieKey,
+                    $"{sessionId};HttpOnly=true"));
+            }
         }
     }
 }

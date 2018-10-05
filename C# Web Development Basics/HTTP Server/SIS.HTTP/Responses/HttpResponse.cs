@@ -1,11 +1,10 @@
 ﻿using SIS.HTTP.Common;
-using SIS.HTTP.Enums;
+using SIS.HTTP.Cookies;
+using SIS.HTTP.Cookies.Contracts;
 using SIS.HTTP.Extensions;
 using SIS.HTTP.Headers;
 using SIS.HTTP.Headers.Contracts;
 using SIS.HTTP.Responses.Contracts;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -19,6 +18,7 @@ namespace SIS.HTTP.Responses
         public HttpResponse(HttpStatusCode statusCode)
         {
             this.StatusCode = statusCode;
+            this.Cookies = new HttpCookieCollection();
             this.Headers = new HttpHeaderCollection();
             this.Content = new byte[0];
         }
@@ -28,6 +28,13 @@ namespace SIS.HTTP.Responses
         public IHttpHeaderCollection Headers { get; private set; }
 
         public byte[] Content { get; set; }
+
+        public IHttpCookieCollection Cookies { get; }
+
+        public void AddCookie(HttpCookie cookie)
+        {
+            this.Cookies.Add(cookie);
+        }
 
         public void AddHeader(HttpHeader header)
         {
@@ -49,8 +56,15 @@ namespace SIS.HTTP.Responses
 
             result
                 .AppendLine($"{GlobalConstants.HttpOneProtocolFragment} {this.StatusCode.GetResponseLine()}")
-                .AppendLine($"{this.Headers}")
-                .AppendLine();
+                .AppendLine($"{this.Headers}");
+
+            if(this.Cookies.HasCookie())
+            {
+                result.AppendLine($"{GlobalConstants.CookieResponseHeaderName}: {this.Cookies}");
+            }
+
+            result.AppendLine();
+               
 
             return result.ToString();
         }
