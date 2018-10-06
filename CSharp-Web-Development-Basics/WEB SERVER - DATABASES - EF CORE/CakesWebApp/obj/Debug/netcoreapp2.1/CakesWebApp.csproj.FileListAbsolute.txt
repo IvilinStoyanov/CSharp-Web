@@ -1,0 +1,16 @@
+D:\GitHub\CSharp-Web\C# Web Development Basics\WEB SERVER - DATABASES - EF CORE\CakesWebApp\bin\Debug\netcoreapp2.1\CakesWebApp.deps.json
+D:\GitHub\CSharp-Web\C# Web Development Basics\WEB SERVER - DATABASES - EF CORE\CakesWebApp\bin\Debug\netcoreapp2.1\CakesWebApp.runtimeconfig.json
+D:\GitHub\CSharp-Web\C# Web Development Basics\WEB SERVER - DATABASES - EF CORE\CakesWebApp\bin\Debug\netcoreapp2.1\CakesWebApp.runtimeconfig.dev.json
+D:\GitHub\CSharp-Web\C# Web Development Basics\WEB SERVER - DATABASES - EF CORE\CakesWebApp\bin\Debug\netcoreapp2.1\CakesWebApp.dll
+D:\GitHub\CSharp-Web\C# Web Development Basics\WEB SERVER - DATABASES - EF CORE\CakesWebApp\bin\Debug\netcoreapp2.1\SIS.HTTP.dll
+D:\GitHub\CSharp-Web\C# Web Development Basics\WEB SERVER - DATABASES - EF CORE\CakesWebApp\bin\Debug\netcoreapp2.1\SIS.WebServer.dll
+D:\GitHub\CSharp-Web\C# Web Development Basics\WEB SERVER - DATABASES - EF CORE\CakesWebApp\bin\Debug\netcoreapp2.1\SIS.HTTP.pdb
+D:\GitHub\CSharp-Web\C# Web Development Basics\WEB SERVER - DATABASES - EF CORE\CakesWebApp\bin\Debug\netcoreapp2.1\SIS.WebServer.pdb
+D:\GitHub\CSharp-Web\C# Web Development Basics\WEB SERVER - DATABASES - EF CORE\CakesWebApp\obj\Debug\netcoreapp2.1\CakesWebApp.csprojAssemblyReference.cache
+D:\GitHub\CSharp-Web\C# Web Development Basics\WEB SERVER - DATABASES - EF CORE\CakesWebApp\obj\Debug\netcoreapp2.1\CakesWebApp.csproj.CoreCompileInputs.cache
+D:\GitHub\CSharp-Web\C# Web Development Basics\WEB SERVER - DATABASES - EF CORE\CakesWebApp\obj\Debug\netcoreapp2.1\CakesWebApp.AssemblyInfoInputs.cache
+D:\GitHub\CSharp-Web\C# Web Development Basics\WEB SERVER - DATABASES - EF CORE\CakesWebApp\obj\Debug\netcoreapp2.1\CakesWebApp.AssemblyInfo.cs
+D:\GitHub\CSharp-Web\C# Web Development Basics\WEB SERVER - DATABASES - EF CORE\CakesWebApp\obj\Debug\netcoreapp2.1\CakesWebApp.csproj.CopyComplete
+D:\GitHub\CSharp-Web\C# Web Development Basics\WEB SERVER - DATABASES - EF CORE\CakesWebApp\bin\Debug\netcoreapp2.1\CakesWebApp.pdb
+D:\GitHub\CSharp-Web\C# Web Development Basics\WEB SERVER - DATABASES - EF CORE\CakesWebApp\obj\Debug\netcoreapp2.1\CakesWebApp.dll
+D:\GitHub\CSharp-Web\C# Web Development Basics\WEB SERVER - DATABASES - EF CORE\CakesWebApp\obj\Debug\netcoreapp2.1\CakesWebApp.pdb
