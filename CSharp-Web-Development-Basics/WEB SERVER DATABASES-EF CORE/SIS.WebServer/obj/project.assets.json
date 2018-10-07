@@ -703,11 +703,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\Csharp-Web\\CSharp-Web-Development-Basics\\WEB SERVER DATABASES-EF CORE\\SIS.WebServer\\SIS.WebServer.csproj",
+      "projectUniqueName": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB SERVER DATABASES-EF CORE\\SIS.WebServer\\SIS.WebServer.csproj",
       "projectName": "SIS.WebServer",
-      "projectPath": "D:\\Github\\Csharp-Web\\CSharp-Web-Development-Basics\\WEB SERVER DATABASES-EF CORE\\SIS.WebServer\\SIS.WebServer.csproj",
+      "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB SERVER DATABASES-EF CORE\\SIS.WebServer\\SIS.WebServer.csproj",
       "packagesPath": "C:\\Users\\Gigabyte\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\Csharp-Web\\CSharp-Web-Development-Basics\\WEB SERVER DATABASES-EF CORE\\SIS.WebServer\\obj\\",
+      "outputPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB SERVER DATABASES-EF CORE\\SIS.WebServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -726,8 +726,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Github\\Csharp-Web\\CSharp-Web-Development-Basics\\WEB SERVER DATABASES-EF CORE\\SIS.HTTP\\SIS.HTTP.csproj": {
-              "projectPath": "D:\\Github\\Csharp-Web\\CSharp-Web-Development-Basics\\WEB SERVER DATABASES-EF CORE\\SIS.HTTP\\SIS.HTTP.csproj"
+            "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB SERVER DATABASES-EF CORE\\SIS.HTTP\\SIS.HTTP.csproj": {
+              "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB SERVER DATABASES-EF CORE\\SIS.HTTP\\SIS.HTTP.csproj"
             }
           }
         }

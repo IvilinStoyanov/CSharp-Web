@@ -30,3 +30,6 @@ D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE\
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE\CakesWebApp\obj\Debug\netcoreapp2.1\CakesWebApp.csproj.CopyComplete
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE\CakesWebApp\obj\Debug\netcoreapp2.1\CakesWebApp.dll
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE\CakesWebApp\obj\Debug\netcoreapp2.1\CakesWebApp.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE\CakesWebApp\bin\Debug\netcoreapp2.1\Views\index.html
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE\CakesWebApp\bin\Debug\netcoreapp2.1\Views\register.html
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE\CakesWebApp\bin\Debug\netcoreapp2.1\Views\Login.html

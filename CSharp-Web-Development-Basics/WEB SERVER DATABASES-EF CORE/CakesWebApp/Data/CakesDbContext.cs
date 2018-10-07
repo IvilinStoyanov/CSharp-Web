@@ -11,9 +11,11 @@ namespace CakesWebApp.Data
 
         public DbSet<Order> Orders { get; set; }
 
+        public DbSet<OrderProduct> OrderProducts { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(DbConfig.ConnectionString);
+            optionsBuilder.UseSqlServer(DbConfig.ConnectionString).UseLazyLoadingProxies();
         }
     }
 }
