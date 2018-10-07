@@ -24,3 +24,4 @@ D:\Github\Csharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE\
 D:\Github\Csharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.AssemblyInfo.cs
 D:\Github\Csharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.dll
 D:\Github\Csharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.csprojAssemblyReference.cache

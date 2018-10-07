@@ -22,7 +22,7 @@ namespace SIS.WebServer
 
         private readonly Socket client;
 
-        private readonly HttpSessionStorage sessionStorage;
+       // private readonly HttpSessionStorage sessionStorage;
 
         private readonly ServerRoutingTable serverRoutingTable;
 
