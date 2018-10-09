@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using CakesWebApp.Data;
 using CakesWebApp.Services;
 using SIS.HTTP.Enums;
@@ -9,7 +7,7 @@ using SIS.HTTP.Requests;
 using SIS.HTTP.Responses;
 using SIS.WebServer.Results;
 
-namespace CakesWebApp.Controllers
+namespace CakesWebApp.Controller
 {
     public abstract class BaseController
     {
