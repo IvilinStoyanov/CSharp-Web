@@ -13,12 +13,16 @@
         <li><a href="/users/register">Register</a></li>
     </ul>
     <hr />
-    <h1>Welcome to IRunes</h1>
-    <h3><a href="/users/login">Login</a> if you have account.</h3>
-    <h3><a href="/users/register">Register</a> if you don't.</h3>
-    <hr />
-    <footer>
-        <p><strong>Copyright Sanity Design Studios. All rights reserved</strong></p>
-    </footer>
+
+    <h1>Login</h1>
+    <form method="post" action="/users/login"> 
+        <div>
+            Username/Email <input type="text" name="username" />
+        </div>
+        <div>
+            Password <input type="Password" name="password" />
+        </div>
+        <input type="submit" value="Login"/>         
+    </form>
 </body>
 </html>

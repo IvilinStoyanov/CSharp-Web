@@ -11,7 +11,6 @@ namespace RunesWebApp.Controllers
 {
     public abstract class BaseController
     {
-        // conts
         private const string RootDirectoryPath = "../../../";
 
         private const string ControllerDefaultName = "Controller";
