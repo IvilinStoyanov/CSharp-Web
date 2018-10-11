@@ -6,7 +6,17 @@ namespace RunesWebApp.Controllers
     public class HomeController : BaseController
     {
         public IHttpResponse Index(IHttpRequest request)
-             => this.View();
+        {
+            if(this.IsAuthenticated(request))
+            {
+                var username = request.Session.GetParameter("username");
+
+                this.ViewBag["username"] = username.ToString();
+                return this.View("IndexLoggedIn");
+            }
+
+            return this.View();
+        }
     }
 }
 

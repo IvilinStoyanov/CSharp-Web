@@ -6,6 +6,8 @@ using SIS.WebServer.Results;
 using System.IO;
 using System.Runtime.CompilerServices;
 using SIS.HTTP.Enums;
+using SIS.HTTP.Cookies;
+using System.Collections.Generic;
 
 namespace RunesWebApp.Controllers
 {
@@ -21,6 +23,8 @@ namespace RunesWebApp.Controllers
 
         private const string HtmlFileExtension = ".html";
 
+        public IDictionary<string, string> ViewBag { get; set; }
+
         private string GetCurrentControllerName()
             => this.GetType().Name.Replace(ControllerDefaultName, string.Empty);
 
@@ -28,11 +32,25 @@ namespace RunesWebApp.Controllers
         {
             this.Db = new RunesDbContext();
             this.UserCookieService = new UserCookieService();
+            this.ViewBag = new Dictionary<string, string>();
         }
 
         protected RunesDbContext Db { get; }
 
         protected IUserCookieService UserCookieService { get; }
+
+        public bool IsAuthenticated(IHttpRequest request)
+        {
+            return request.Session.ContainsParameter("username");
+        }
+
+        public void SignIn(string username, IHttpRequest request)
+        {
+            request.Session.AddParameter("username", username);
+            var userCookieValue = UserCookieService.GetUserCookie(username);
+
+            request.Cookies.Add(new HttpCookie("IRunes_auth", userCookieValue));
+        }
 
         protected string GetUsername(IHttpRequest request)
         {
@@ -64,10 +82,17 @@ namespace RunesWebApp.Controllers
 
             var fileContent = File.ReadAllText(filePath);
 
+            foreach (var viewBagKey in ViewBag.Keys)
+            {
+                var usernameInter = $"{{{{{viewBagKey}}}}}";
+
+                if (fileContent.Contains(usernameInter))
+                    fileContent = fileContent.Replace(usernameInter, this.ViewBag[viewBagKey]);
+            }
+
             var response = new HtmlResult(fileContent, HttpResponseStatusCode.Ok);
 
             return response;
         }
-
     }
 }
