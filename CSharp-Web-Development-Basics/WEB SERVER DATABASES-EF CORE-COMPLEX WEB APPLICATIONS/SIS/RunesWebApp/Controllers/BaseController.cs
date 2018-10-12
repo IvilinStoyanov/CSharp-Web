@@ -13,86 +13,101 @@ namespace RunesWebApp.Controllers
 {
     public abstract class BaseController
     {
-        private const string RootDirectoryPath = "../../../";
+        private const string RootDirectoryRelativePath = "../../../";
 
         private const string ControllerDefaultName = "Controller";
 
-        private const string DirectorySeperator = "/";
+        private const string DirectorySeparator = "/";
 
-        private const string ViewFolderName = "Views";
+        private const string ViewsFolderName = "Views";
 
         private const string HtmlFileExtension = ".html";
 
-        public IDictionary<string, string> ViewBag { get; set; }
+        private const string LayoutViewFileName = "_Layout";
 
-        private string GetCurrentControllerName()
-            => this.GetType().Name.Replace(ControllerDefaultName, string.Empty);
+        private const string RenderBodyConstant = "@RenderBody()";
 
-        protected BaseController()
+        protected RunesDbContext Db { get; set; }
+
+        private readonly UserCookieService cookieService;
+
+        protected IDictionary<string, string> ViewBag { get; set; }
+
+        public BaseController()
         {
             this.Db = new RunesDbContext();
-            this.UserCookieService = new UserCookieService();
+            this.cookieService = new UserCookieService();
             this.ViewBag = new Dictionary<string, string>();
         }
-
-        protected RunesDbContext Db { get; }
-
-        protected IUserCookieService UserCookieService { get; }
 
         public bool IsAuthenticated(IHttpRequest request)
         {
             return request.Session.ContainsParameter("username");
         }
 
-        public void SignIn(string username, IHttpRequest request)
+        public void SignInUser(
+            string username,
+            IHttpResponse response,
+            IHttpRequest request)
         {
             request.Session.AddParameter("username", username);
-            var userCookieValue = UserCookieService.GetUserCookie(username);
-
-            request.Cookies.Add(new HttpCookie("IRunes_auth", userCookieValue));
+            var userCookieValue = this.cookieService.GetUserCookie(username);
+            response.Cookies.Add(new HttpCookie("IRunes_auth", userCookieValue));
         }
 
-        protected string GetUsername(IHttpRequest request)
-        {
-            if (!request.Cookies.ContainsCookie(".auth-cakes"))
-            {
-                return null;
-            }
-
-            var cookie = request.Cookies.GetCookie(".auth-cakes");
-            var cookieContent = cookie.Value;
-            var userName = this.UserCookieService.GetUserData(cookieContent);
-            return userName;
-        }
+        private string GetCurrentControllerName() =>
+            this.GetType().Name.Replace(ControllerDefaultName, string.Empty);
 
         protected IHttpResponse View([CallerMemberName] string viewName = "")
         {
-            string filePath = RootDirectoryPath +
-                ViewFolderName +
-                DirectorySeperator +
+            var layoutView = RootDirectoryRelativePath +
+                ViewsFolderName +
+                DirectorySeparator +
+                LayoutViewFileName +
+                HtmlFileExtension;
+
+            string filePath = RootDirectoryRelativePath +
+                ViewsFolderName +
+                DirectorySeparator +
                 this.GetCurrentControllerName() +
-                DirectorySeperator +
+                DirectorySeparator +
                 viewName +
                 HtmlFileExtension;
 
             if (!File.Exists(filePath))
             {
-                return new BadRequestResult($"View {viewName} not found", HttpResponseStatusCode.NotFound);
+                return new BadRequestResult(
+                    $"View {viewName} not found.",
+                    HttpResponseStatusCode.NotFound);
             }
 
-            var fileContent = File.ReadAllText(filePath);
+            var viewContent = BuildViewContent(filePath);
+
+
+            var viewLayout = File.ReadAllText(layoutView);
+            var view = viewLayout.Replace(RenderBodyConstant, viewContent);
+
+            var response = new HtmlResult(view, HttpResponseStatusCode.Ok);
+
+            return response;
+        }
+
+        private string BuildViewContent(string filePath)
+        {
+            var viewContent = File.ReadAllText(filePath);
 
             foreach (var viewBagKey in ViewBag.Keys)
             {
-                var usernameInter = $"{{{{{viewBagKey}}}}}";
-
-                if (fileContent.Contains(usernameInter))
-                    fileContent = fileContent.Replace(usernameInter, this.ViewBag[viewBagKey]);
+                var dynamicDataPlaceholder = $"{{{{{viewBagKey}}}}}";
+                if (viewContent.Contains(dynamicDataPlaceholder))
+                {
+                    viewContent = viewContent.Replace(
+                        dynamicDataPlaceholder,
+                        this.ViewBag[viewBagKey]);
+                }
             }
 
-            var response = new HtmlResult(fileContent, HttpResponseStatusCode.Ok);
-
-            return response;
+            return viewContent;
         }
     }
 }

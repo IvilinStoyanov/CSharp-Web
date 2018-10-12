@@ -12,39 +12,39 @@ namespace RunesWebApp.Controllers
 {
     public class UsersController : BaseController
     {
-        private readonly IHashService hashService;
+        private readonly HashService hashService;
 
         public UsersController()
         {
             this.hashService = new HashService();
         }
 
-        public IHttpResponse Login(IHttpRequest request)
-            => this.View();
+        public IHttpResponse Login(IHttpRequest request) => this.View();
 
-        public IHttpResponse DoLogin(IHttpRequest request)
-        {           
-            var username = request.FormData["username"].ToString().Trim();
+        public IHttpResponse PostLogin(IHttpRequest request)
+        {
+            var username = request.FormData["username"].ToString();
             var password = request.FormData["password"].ToString();
 
-            var hashService = new HashService();
-            var hashedPassword = hashService.Hash(password);
+            var hashedPassword = this.hashService.Hash(password);
 
-            var user = this.Db.Users.FirstOrDefault(x => x.Username == username &&
-                                            x.HashedPassoword == hashedPassword);
+            var user = this.Db.Users
+                .FirstOrDefault(u => u.Username == username &&
+                    u.HashedPassoword == hashedPassword);
 
-            if(user == null)
+            if (user == null)
             {
                 return new RedirectResult("/login");
             }
 
-            // SignIn after register 
-            this.SignIn(username, request);
-
-            return new RedirectResult("/home/index");
+            var response = new RedirectResult("/home/index");
+            this.SignInUser(username, response, request);
+            return response;
         }
 
-        public IHttpResponse DoRegister(IHttpRequest request)
+        public IHttpResponse Register(IHttpRequest request) => this.View();
+
+        public IHttpResponse PostRegister(IHttpRequest request)
         {
             var userName = request.FormData["username"].ToString().Trim();
             var password = request.FormData["password"].ToString();
@@ -56,7 +56,7 @@ namespace RunesWebApp.Controllers
             //    return new BadRequestResult("Please provide valid username with length of 4 or more characters.");
             //}
 
-            //if (this.Db.Users.Any(x => x.Username == userName))
+            //if (this.Context.Users.Any(x => x.Username == userName))
             //{
             //    return new BadRequestResult("User with the same name already exists.");
             //}
@@ -68,7 +68,9 @@ namespace RunesWebApp.Controllers
 
             if (password != confirmPassword)
             {
-                return new BadRequestResult("Passwords do not match.", HttpResponseStatusCode.SeeOther);
+                return new BadRequestResult(
+                    "Passwords do not match.",
+                    HttpResponseStatusCode.SeeOther);
             }
 
             // Hash password
@@ -76,7 +78,7 @@ namespace RunesWebApp.Controllers
 
             // Create user
             var user = new User
-            {   
+            {
                 Username = userName,
                 HashedPassoword = hashedPassword,
             };
@@ -89,18 +91,17 @@ namespace RunesWebApp.Controllers
             catch (Exception e)
             {
                 // TODO: Log error
-                return new BadRequestResult(e.Message, HttpResponseStatusCode.InternalServerError);
-                
+                return new BadRequestResult(
+                    e.Message,
+                    HttpResponseStatusCode.InternalServerError);
             }
 
-            // SignIn after register 
-            this.SignIn(userName, request);
+            var response = new RedirectResult("/");
+            this.SignInUser(userName, response, request);
 
             // Redirect
-            return new RedirectResult("/");
+            return response;
         }
-
-        public IHttpResponse Register(IHttpRequest request)
-            => this.View();
     }
 }
+
