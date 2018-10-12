@@ -1,0 +1,18 @@
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\Services\bin\Debug\netcoreapp2.1\Services.deps.json
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\Services\bin\Debug\netcoreapp2.1\Services.dll
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\Services\bin\Debug\netcoreapp2.1\Services.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\Services\obj\Debug\netcoreapp2.1\Services.csproj.CoreCompileInputs.cache
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfoInputs.cache
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfo.cs
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\Services\obj\Debug\netcoreapp2.1\Services.dll
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\Services\obj\Debug\netcoreapp2.1\Services.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\Services\obj\Debug\netcoreapp2.1\Services.csprojAssemblyReference.cache
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION - DATA VISUALIZATION\Services\bin\Debug\netcoreapp2.1\Services.deps.json
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION - DATA VISUALIZATION\Services\bin\Debug\netcoreapp2.1\Services.dll
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION - DATA VISUALIZATION\Services\bin\Debug\netcoreapp2.1\Services.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION - DATA VISUALIZATION\Services\obj\Debug\netcoreapp2.1\Services.csprojAssemblyReference.cache
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION - DATA VISUALIZATION\Services\obj\Debug\netcoreapp2.1\Services.csproj.CoreCompileInputs.cache
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION - DATA VISUALIZATION\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfoInputs.cache
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION - DATA VISUALIZATION\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfo.cs
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION - DATA VISUALIZATION\Services\obj\Debug\netcoreapp2.1\Services.dll
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION - DATA VISUALIZATION\Services\obj\Debug\netcoreapp2.1\Services.pdb
