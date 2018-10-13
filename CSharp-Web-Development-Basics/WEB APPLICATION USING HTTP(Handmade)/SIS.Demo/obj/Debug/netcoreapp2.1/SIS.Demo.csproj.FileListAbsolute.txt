@@ -1,0 +1,16 @@
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\SIS.Demo\bin\Debug\netcoreapp2.1\SIS.Demo.deps.json
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\SIS.Demo\bin\Debug\netcoreapp2.1\SIS.Demo.runtimeconfig.json
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\SIS.Demo\bin\Debug\netcoreapp2.1\SIS.Demo.runtimeconfig.dev.json
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\SIS.Demo\bin\Debug\netcoreapp2.1\SIS.Demo.dll
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\SIS.Demo\bin\Debug\netcoreapp2.1\SIS.Demo.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\SIS.Demo\bin\Debug\netcoreapp2.1\SIS.HTTP.dll
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\SIS.Demo\bin\Debug\netcoreapp2.1\SIS.WebServer.dll
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\SIS.Demo\bin\Debug\netcoreapp2.1\SIS.HTTP.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\SIS.Demo\bin\Debug\netcoreapp2.1\SIS.WebServer.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\SIS.Demo\obj\Debug\netcoreapp2.1\SIS.Demo.csprojAssemblyReference.cache
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\SIS.Demo\obj\Debug\netcoreapp2.1\SIS.Demo.csproj.CoreCompileInputs.cache
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\SIS.Demo\obj\Debug\netcoreapp2.1\SIS.Demo.AssemblyInfoInputs.cache
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\SIS.Demo\obj\Debug\netcoreapp2.1\SIS.Demo.AssemblyInfo.cs
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\SIS.Demo\obj\Debug\netcoreapp2.1\SIS.Demo.csproj.CopyComplete
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\SIS.Demo\obj\Debug\netcoreapp2.1\SIS.Demo.dll
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB SERVER DATABASES-EF CORE-COMPLEX WEB APPLICATIONS\SIS\SIS.Demo\obj\Debug\netcoreapp2.1\SIS.Demo.pdb
