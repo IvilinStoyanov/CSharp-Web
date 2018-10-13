@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION - DATA VISUALIZATION\\Services\\Services.csproj",
+      "projectUniqueName": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION - DATA VISUALIZATION\\Services\\Services.csproj",
+      "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\Services\\Services.csproj",
       "packagesPath": "C:\\Users\\Gigabyte\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION - DATA VISUALIZATION\\Services\\obj\\",
+      "outputPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

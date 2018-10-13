@@ -4813,11 +4813,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION - DATA VISUALIZATION\\RunesWebApp\\RunesWebApp.csproj",
+      "projectUniqueName": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\RunesWebApp\\RunesWebApp.csproj",
       "projectName": "RunesWebApp",
-      "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION - DATA VISUALIZATION\\RunesWebApp\\RunesWebApp.csproj",
+      "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\RunesWebApp\\RunesWebApp.csproj",
       "packagesPath": "C:\\Users\\Gigabyte\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION - DATA VISUALIZATION\\RunesWebApp\\obj\\",
+      "outputPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\RunesWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4836,11 +4836,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION - DATA VISUALIZATION\\SIS.HTTP\\SIS.HTTP.csproj": {
-              "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION - DATA VISUALIZATION\\SIS.HTTP\\SIS.HTTP.csproj"
+            "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\SIS.HTTP\\SIS.HTTP.csproj": {
+              "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\SIS.HTTP\\SIS.HTTP.csproj"
             },
-            "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION - DATA VISUALIZATION\\SIS.WebServer\\SIS.WebServer.csproj": {
-              "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION - DATA VISUALIZATION\\SIS.WebServer\\SIS.WebServer.csproj"
+            "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\SIS.WebServer\\SIS.WebServer.csproj": {
+              "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\SIS.WebServer\\SIS.WebServer.csproj"
             }
           }
         }
