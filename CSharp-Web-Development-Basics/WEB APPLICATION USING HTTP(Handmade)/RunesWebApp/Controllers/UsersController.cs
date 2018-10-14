@@ -1,7 +1,6 @@
 ﻿using RunesWebApp.Models;
 using RunesWebApp.Services;
 using System;
-using SIS.HTTP.Cookies;
 using SIS.HTTP.Requests;
 using SIS.HTTP.Responses;
 using SIS.WebServer.Results;

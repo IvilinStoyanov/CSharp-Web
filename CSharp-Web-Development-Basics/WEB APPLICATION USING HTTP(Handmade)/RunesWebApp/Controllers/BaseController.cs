@@ -42,7 +42,7 @@ namespace RunesWebApp.Controllers
 
         public bool IsAuthenticated(IHttpRequest request)
         {
-            return request.Session.ContainsParameter("username");
+            return request.Session.ContainsParameter("username");          
         }
 
         public void SignInUser(
@@ -60,6 +60,7 @@ namespace RunesWebApp.Controllers
 
         protected IHttpResponse View([CallerMemberName] string viewName = "")
         {
+            
             var layoutView = RootDirectoryRelativePath +
                 ViewsFolderName +
                 DirectorySeparator +
@@ -73,6 +74,8 @@ namespace RunesWebApp.Controllers
                 DirectorySeparator +
                 viewName +
                 HtmlFileExtension;
+
+
 
             if (!File.Exists(filePath))
             {
