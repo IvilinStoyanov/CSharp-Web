@@ -23,4 +23,3 @@ D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION USING HTTP(Ha
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION USING HTTP(Handmade)\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.AssemblyInfo.cs
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION USING HTTP(Handmade)\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.dll
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION USING HTTP(Handmade)\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.pdb
-D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION USING HTTP(Handmade)\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.csprojAssemblyReference.cache

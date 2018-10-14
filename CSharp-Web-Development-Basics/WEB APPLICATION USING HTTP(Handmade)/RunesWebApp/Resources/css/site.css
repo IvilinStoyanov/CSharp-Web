@@ -1,0 +1,145 @@
+﻿.navbar {
+    color: white;
+}
+
+a {
+    color: orange;
+}
+
+footer {
+    color: black;
+    text-align: center;
+}
+
+.top-border-line {
+    margin-top: 5px;
+}
+
+.bottom-border-line {
+    margin-top: 20px;
+}
+
+.heading-container {
+    border-bottom: solid;
+    border-color: white;
+    padding-top: 10px;
+}
+
+.primary-separator {
+    border-top: solid;
+    border-color: green;
+    margin-bottom: 10px;
+}
+
+.bottom-buffer-md {
+    margin-bottom: 15px;
+}
+
+.bottom-buffer-xs {
+    margin-bottom: 10px;
+}
+
+.navbar {
+    background-color: green;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+    .nav-link:hover {
+        color: white;
+    }
+
+.navbar-brand {
+    color: whitesmoke;
+}
+
+.jumbotron {
+    background-color: green;
+    color: white;
+}
+
+/*form css goes here*/
+
+.register-photo {
+    padding: 80px 0;
+}
+
+    .register-photo .image-holder {
+        display: table-cell;
+        width: auto;
+        background: url(../../assets/img/meeting.jpg);
+        background-size: cover;
+    }
+
+    .register-photo .form-container {
+        display: table;
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .register-photo form {
+        display: table-cell;
+        width: 400px;
+        background-color: #ffffff;
+        padding: 40px 60px;
+        color: #505e6c;
+    }
+
+@media (max-width:991px) {
+    .register-photo form {
+        padding: 40px;
+    }
+}
+
+.register-photo form h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: rgb(78,194,23);
+}
+
+.register-photo form .form-control {
+    border: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 6px;
+    height: 40px;
+}
+
+.register-photo form .form-check {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.register-photo form .btn-primary {
+    border-radius: 4px;
+    width: 100px;
+    padding: 11px;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    font-size: 18px;
+    background-color: #4ec217;
+}
+
+form {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+hr {
+    background-color: #25aa2b;
+}
+
+.form-container h1 {
+    color: rgb(78,194,23);
+}

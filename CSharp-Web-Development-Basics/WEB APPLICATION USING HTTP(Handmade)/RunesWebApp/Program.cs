@@ -33,13 +33,16 @@ namespace RunesWebApp
                 request => new UsersController().Register(request);
             serverRoutingTable.Routes[HttpRequestMethod.Get]["/albums/all"] =
                 request => new AlbumsController().All(request);
+            serverRoutingTable.Routes[HttpRequestMethod.Get]["/albums/create"] = request =>
+                  new AlbumsController().Create();
 
-
-            // POST
+            //post
             serverRoutingTable.Routes[HttpRequestMethod.Post]["/users/login"] =
                 request => new UsersController().PostLogin(request);
             serverRoutingTable.Routes[HttpRequestMethod.Post]["/users/register"] =
                 request => new UsersController().PostRegister(request);
+            serverRoutingTable.Routes[HttpRequestMethod.Post]["/albums/create"] = request =>
+                 new AlbumsController().DoCreate(request);
         }
     }
 }

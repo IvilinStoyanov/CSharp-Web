@@ -1,6 +1,9 @@
-﻿using SIS.HTTP.Requests;
+﻿using RunesWebApp.Models;
+using SIS.HTTP.Enums;
+using SIS.HTTP.Requests;
 using SIS.HTTP.Responses;
 using SIS.WebServer.Results;
+using System;
 using System.Linq;
 
 namespace RunesWebApp.Controllers
@@ -32,6 +35,43 @@ namespace RunesWebApp.Controllers
             }
 
             return this.View();
+        }
+
+        public IHttpResponse Create()
+        {
+            return View();
+        }
+
+        //post album/create
+        public IHttpResponse DoCreate(IHttpRequest request)
+        {
+            var name = request.FormData["name"].ToString().Trim();
+            var cover = request.FormData["cover"].ToString();
+
+
+            // Create user
+            var album = new Album
+            {
+                Name = name,
+                Cover = cover
+            };
+            this.Db.Albums.Add(album);
+
+            try
+            {
+                this.Db.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                // TODO: Log error
+                return new BadRequestResult(
+                    e.Message,
+                    HttpResponseStatusCode.InternalServerError);
+            }
+            var response = new RedirectResult("/albums/all");
+
+            // Redirect
+            return response;
         }
     }
 }

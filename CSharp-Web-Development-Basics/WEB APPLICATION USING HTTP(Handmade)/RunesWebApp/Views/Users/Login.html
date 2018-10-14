@@ -1,10 +1,19 @@
-﻿<h1>Login</h1>
-<form method="post" action="/users/login">
-    <div>
-        Username/Email <input type="text" name="username" />
+﻿<div class="register-photo">
+    <div class="form-container">
+        <h1 class="text-center"><strong>Login</strong></h1>
+        <hr>
+        <div class="form-container">
+            <form method="post" action="/users/login">
+                <p>Username/Email</p>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="username" placeholder="Username">
+                </div>
+                <p>Password</p>
+                <div class="form-group">
+                    <input class="form-control" type="password" name="password" placeholder="Password">
+                </div>
+                <button class="btn btn-primary btn-sm" type="submit">Login</button>
+            </form>
+        </div>
     </div>
-    <div>
-        Password <input type="Password" name="password" />
-    </div>
-    <input type="submit" value="Login" />
-</form>
+</div>
