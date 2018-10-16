@@ -1,9 +1,11 @@
 ﻿.navbar {
     color: white;
+    background-color: rgb(134, 172, 172);
 }
 
-a {
-    color: orange;
+.jumbotron a {
+    color: rgb(134, 172, 172);
+    font-weight: bold;
 }
 
 footer {
@@ -27,7 +29,7 @@ footer {
 
 .primary-separator {
     border-top: solid;
-    border-color: green;
+    border-color: rgb(134, 172, 172);
     margin-bottom: 10px;
 }
 
@@ -39,14 +41,15 @@ footer {
     margin-bottom: 10px;
 }
 
-.navbar {
-    background-color: green;
-}
-
 .nav-link {
     color: white;
     text-decoration: none;
 }
+
+    .nav-link:hover {
+        padding-top: 2px;
+        transition: .1s;
+    }
 
     .nav-link:hover {
         color: white;
@@ -57,8 +60,34 @@ footer {
 }
 
 .jumbotron {
-    background-color: green;
-    color: white;
+    background-color: rgb(242, 242, 242, 0.5);
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+/*Alerts*/
+
+.alert {
+    margin-top: 30px;
+}
+
+a {
+    margin-left: 5px;
+}
+
+p {
+    margin-left: 15px;
+}
+
+/*details*/
+
+.details {
+   padding: 40px;
+   max-width: 80%;
+   margin: 0 auto;
 }
 
 /*form css goes here*/
@@ -99,11 +128,11 @@ footer {
     font-size: 24px;
     line-height: 1.5;
     margin-bottom: 30px;
-    color: rgb(78,194,23);
+    color: rgb(134, 172, 172);
 }
 
 .register-photo form .form-control {
-    border: 1px solid #dfe7f1;
+    border: 1px solid rgb(134, 172, 172);
     border-radius: 0;
     box-shadow: none;
     outline: none;
@@ -124,7 +153,7 @@ footer {
     text-shadow: none;
     border: none;
     font-size: 18px;
-    background-color: #4ec217;
+    background-color: rgb(134, 172, 172);
 }
 
 form {
@@ -136,9 +165,9 @@ p {
 }
 
 hr {
-    background-color: #25aa2b;
+    background-color: rgb(134, 172, 172);
 }
 
 .form-container h1 {
-    color: rgb(78,194,23);
+    color: rgb(134, 172, 172);
 }

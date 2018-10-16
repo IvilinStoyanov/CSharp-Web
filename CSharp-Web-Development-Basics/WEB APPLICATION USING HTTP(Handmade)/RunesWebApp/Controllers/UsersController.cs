@@ -20,7 +20,7 @@ namespace RunesWebApp.Controllers
 
         public IHttpResponse Login(IHttpRequest request) => this.View();
 
-        public IHttpResponse PostLogin(IHttpRequest request)
+        public IHttpResponse DoLogin(IHttpRequest request)
         {
             var username = request.FormData["username"].ToString();
             var password = request.FormData["password"].ToString();
@@ -43,7 +43,18 @@ namespace RunesWebApp.Controllers
 
         public IHttpResponse Register(IHttpRequest request) => this.View();
 
-        public IHttpResponse PostRegister(IHttpRequest request)
+        public IHttpResponse Logout(IHttpRequest request)
+        {
+            if (!request.Session.ContainsParameter("username"))
+            {
+                return new RedirectResult("/");
+            }
+
+            request.Session.ClearParameters();
+            return new RedirectResult("/");
+        }
+
+        public IHttpResponse DoRegister(IHttpRequest request)
         {
             var userName = request.FormData["username"].ToString().Trim();
             var password = request.FormData["password"].ToString();

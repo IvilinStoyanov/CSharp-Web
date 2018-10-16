@@ -1,0 +1,44 @@
+﻿ <!--Navbar-->
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">IRunes</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/users/logout">Logout</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/albums/all">Albums</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--Details Album-->
+<div class="row details">
+    <div class="col-md-5">
+        <div class="row justify-content-center">
+            {{Cover}}
+        </div>
+        <div class="row justify-content-center">
+            <h4 class="text-dark">Album Name: {{Name}}</h4>
+        </div>
+        <div class="row justify-content-center">
+            <h4 class="text-dark">Price:{{Price}}</h4>
+        </div>
+        <div class="row justify-content-center">
+            {{CreateTrack}}
+        </div>
+        <br />
+        <div class="row justify-content-center">
+            <a class="btn btn-primary" href="/albums/all" role="button">Back To All</a>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div class="row justify-content-center">
+            <h4 class="text-dark">Tracks</h4>
+        </div>
+        {{AllTracks}}
+    </div>
+</div>

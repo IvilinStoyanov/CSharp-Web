@@ -15,7 +15,7 @@ namespace RunesWebApp.Controllers
                 return this.View("IndexLoggedIn");
             }
 
-            return this.View();
+                return this.View();
         }
     }
 }

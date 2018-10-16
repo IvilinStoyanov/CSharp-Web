@@ -24,3 +24,4 @@ D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION USING HTTP(Ha
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION USING HTTP(Handmade)\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfo.cs
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION USING HTTP(Handmade)\Services\obj\Debug\netcoreapp2.1\Services.dll
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION USING HTTP(Handmade)\Services\obj\Debug\netcoreapp2.1\Services.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\WEB APPLICATION USING HTTP(Handmade)\Services\obj\Debug\netcoreapp2.1\Services.csprojAssemblyReference.cache

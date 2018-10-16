@@ -1,6 +1,6 @@
 ﻿namespace RunesWebApp.Models
 {
-    public class User : BaseModel<string>
+    public class User : BaseModel<int>
     {
         public string Username { get; set; }
 
