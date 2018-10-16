@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\SIS.Framework\\SIS.Framework.csproj",
+      "projectUniqueName": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\Web.App-SIS\\SIS.Framework\\SIS.Framework.csproj",
       "projectName": "SIS.Framework",
-      "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\SIS.Framework\\SIS.Framework.csproj",
+      "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\Web.App-SIS\\SIS.Framework\\SIS.Framework.csproj",
       "packagesPath": "C:\\Users\\Gigabyte\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\SIS.Framework\\obj\\",
+      "outputPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\Web.App-SIS\\SIS.Framework\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -703,11 +703,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\SIS.WebServer\\SIS.WebServer.csproj",
+      "projectUniqueName": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\Web.App-SIS\\SIS.WebServer\\SIS.WebServer.csproj",
       "projectName": "SIS.WebServer",
-      "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\SIS.WebServer\\SIS.WebServer.csproj",
+      "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\Web.App-SIS\\SIS.WebServer\\SIS.WebServer.csproj",
       "packagesPath": "C:\\Users\\Gigabyte\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\SIS.WebServer\\obj\\",
+      "outputPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\Web.App-SIS\\SIS.WebServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -726,8 +726,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\SIS.HTTP\\SIS.HTTP.csproj": {
-              "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\WEB APPLICATION USING HTTP(Handmade)\\SIS.HTTP\\SIS.HTTP.csproj"
+            "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\Web.App-SIS\\SIS.HTTP\\SIS.HTTP.csproj": {
+              "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\Web.App-SIS\\SIS.HTTP\\SIS.HTTP.csproj"
             }
           }
         }
