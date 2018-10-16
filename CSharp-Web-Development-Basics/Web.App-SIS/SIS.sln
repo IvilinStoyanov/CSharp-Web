@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunesWebApp", "RunesWebApp\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{CEDC5BA5-1F03-44CF-B5E6-B46C87F4A930}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIS.Framework", "SIS.Framework\SIS.Framework.csproj", "{013960A0-E843-47E6-A74B-AE60F1E0C94B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{CEDC5BA5-1F03-44CF-B5E6-B46C87F4A930}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEDC5BA5-1F03-44CF-B5E6-B46C87F4A930}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEDC5BA5-1F03-44CF-B5E6-B46C87F4A930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{013960A0-E843-47E6-A74B-AE60F1E0C94B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{013960A0-E843-47E6-A74B-AE60F1E0C94B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{013960A0-E843-47E6-A74B-AE60F1E0C94B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{013960A0-E843-47E6-A74B-AE60F1E0C94B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
