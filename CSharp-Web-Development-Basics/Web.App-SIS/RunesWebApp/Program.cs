@@ -1,6 +1,7 @@
 ﻿using RunesWebApp.Controllers;
 using SIS.HTTP.Enums;
 using SIS.WebServer;
+using SIS.WebServer.Api;
 using SIS.WebServer.Results;
 using SIS.WebServer.Routing;
 
@@ -8,14 +9,17 @@ namespace RunesWebApp
 {
     public class Program
     {
+        private const int serverPort = 8000;
+
         static void Main(string[] args)
         {
             ServerRoutingTable serverRoutingTable = new ServerRoutingTable();
 
+            var handler = new HttpHandler(serverRoutingTable);
+
             ConfigureRouting(serverRoutingTable);
 
-
-            Server server = new Server(8000, serverRoutingTable);
+            Server server = new Server(serverPort, handler);
 
             server.Run();
         }

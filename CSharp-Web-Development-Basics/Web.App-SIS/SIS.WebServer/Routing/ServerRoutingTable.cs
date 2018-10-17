@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using SIS.HTTP.Enums;
 using SIS.HTTP.Requests;
 using SIS.HTTP.Responses;
+using SIS.WebServer.Api.Contracts;
 
 namespace SIS.WebServer.Routing
 {
