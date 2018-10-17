@@ -18,7 +18,7 @@ namespace RunesWebApp.Controllers
             this.hashService = new HashService();
         }
 
-        public IHttpResponse Login(IHttpRequest request) => this.View();
+        public IHttpResponse Login(IHttpRequest request) => this.ViewMethod();
 
         public IHttpResponse DoLogin(IHttpRequest request)
         {
@@ -41,7 +41,7 @@ namespace RunesWebApp.Controllers
             return response;
         }
 
-        public IHttpResponse Register(IHttpRequest request) => this.View();
+        public IHttpResponse Register(IHttpRequest request) => this.ViewMethod();
 
         public IHttpResponse Logout(IHttpRequest request)
         {

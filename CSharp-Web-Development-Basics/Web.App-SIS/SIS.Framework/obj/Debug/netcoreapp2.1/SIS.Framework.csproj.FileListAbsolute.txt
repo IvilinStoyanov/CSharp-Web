@@ -7,3 +7,8 @@ D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\SIS.Framework\obj
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\SIS.Framework\obj\Debug\netcoreapp2.1\SIS.Framework.AssemblyInfo.cs
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\SIS.Framework\obj\Debug\netcoreapp2.1\SIS.Framework.dll
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\SIS.Framework\obj\Debug\netcoreapp2.1\SIS.Framework.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\SIS.Framework\bin\Debug\netcoreapp2.1\SIS.HTTP.dll
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\SIS.Framework\bin\Debug\netcoreapp2.1\SIS.WebServer.dll
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\SIS.Framework\bin\Debug\netcoreapp2.1\SIS.WebServer.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\SIS.Framework\bin\Debug\netcoreapp2.1\SIS.HTTP.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\SIS.Framework\obj\Debug\netcoreapp2.1\SIS.Framework.csproj.CopyComplete

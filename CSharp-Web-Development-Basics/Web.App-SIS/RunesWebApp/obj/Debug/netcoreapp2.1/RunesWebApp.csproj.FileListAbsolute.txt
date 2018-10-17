@@ -62,3 +62,5 @@ D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\RunesWebApp\obj\D
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\RunesWebApp\obj\Debug\netcoreapp2.1\RunesWebApp.csproj.CopyComplete
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\RunesWebApp\obj\Debug\netcoreapp2.1\RunesWebApp.dll
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\RunesWebApp\obj\Debug\netcoreapp2.1\RunesWebApp.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\RunesWebApp\bin\Debug\netcoreapp2.1\SIS.Framework.dll
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\RunesWebApp\bin\Debug\netcoreapp2.1\SIS.Framework.pdb

@@ -38,7 +38,7 @@ namespace RunesWebApp.Controllers
             this.ViewBag["StartForm"] = $"<form method=\"post\" action=\"/tracks/create?albumId={albumId}\">";
             this.ViewBag["EndForm"] = "</form>";
 
-            return this.View("Create");
+            return this.ViewMethod("Create");
         }
 
         public IHttpResponse DoCreate(IHttpRequest request)
@@ -51,7 +51,7 @@ namespace RunesWebApp.Controllers
             if (!request.QueryData.ContainsKey("albumId"))
             {
                 this.ViewBag["Error"] = AlbumDoesNotExist;
-                return this.View("Error");
+                return this.ViewMethod("Error");
             }
 
             var albumId = int.Parse(request.QueryData["albumId"].ToString());
@@ -60,7 +60,7 @@ namespace RunesWebApp.Controllers
             if (album == null)
             {
                 this.ViewBag["Error"] = AlbumDoesNotExist;
-                return this.View("Error");
+                return this.ViewMethod("Error");
             }
 
             var name = request.FormData["name"].ToString().UrlDecode();
@@ -71,13 +71,13 @@ namespace RunesWebApp.Controllers
             if (name.Length <= 2 || link.Length <= 1 || price <= 0)
             {
                 this.ViewBag["Error"] = InvalidData;
-                return this.View("Error");
+                return this.ViewMethod("Error");
             }
 
             if (this.trackService.ContainsTrack(name))
             {
                 this.ViewBag["Error"] = TrackAlreadyExists;
-                return this.View("Error");
+                return this.ViewMethod("Error");
             }
 
             this.trackService.AddTrack(name, link, price, albumId);
@@ -96,7 +96,7 @@ namespace RunesWebApp.Controllers
             if (!request.QueryData.ContainsKey("albumId") || !request.QueryData.ContainsKey("trackId"))
             {
                 this.ViewBag["Error"] = AlbumDoesNotExist;
-                return this.View("Error");
+                return this.ViewMethod("Error");
             }
 
             var albumId = int.Parse(request.QueryData["albumId"].ToString());
@@ -106,7 +106,7 @@ namespace RunesWebApp.Controllers
             if (track == null)
             {
                 this.ViewBag["Error"] = TrackDoesNotExist;
-                return this.View("Error");
+                return this.ViewMethod("Error");
             }
 
             this.ViewBag["Name"] = track.Name;
@@ -117,7 +117,7 @@ namespace RunesWebApp.Controllers
             this.ViewBag["Video"] = trackVideo;
 
 
-            return this.View("Details");
+            return this.ViewMethod("Details");
         }
     }
 }

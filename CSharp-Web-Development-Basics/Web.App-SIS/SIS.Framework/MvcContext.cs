@@ -14,12 +14,12 @@ namespace SIS.Framework
 
         public string AssemblyName { get; set; }
 
-        public string ControllerFolder { get; set; } = "Controllers";
-
         public string ControllerSuffix { get; set; } = "Controller";
+
+        public string ControllersFolder { get; set; } = "Controllers";
 
         public string ViewsFolder { get; set; } = "Views";
 
-        public string ModelFolder { get; set; } = "Models";
+        public string ModelsFolder { get; set; } = "Models";
     }
 }

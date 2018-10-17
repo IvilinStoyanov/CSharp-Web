@@ -1,4 +1,6 @@
 ﻿using RunesWebApp.Controllers;
+using SIS.Framework;
+using SIS.Framework.Routes;
 using SIS.HTTP.Enums;
 using SIS.WebServer;
 using SIS.WebServer.Api;
@@ -13,15 +15,14 @@ namespace RunesWebApp
 
         static void Main(string[] args)
         {
-            ServerRoutingTable serverRoutingTable = new ServerRoutingTable();
-
-            var handler = new HttpHandler(serverRoutingTable);
-
-            ConfigureRouting(serverRoutingTable);
+            var handler = new ControllerRouter();
 
             Server server = new Server(serverPort, handler);
 
-            server.Run();
+            var engine = new MvcEngine();
+            engine.Run(server);
+
+            //  ServerRoutingTable serverRoutingTable = new ServerRoutingTable();
         }
 
         private static void ConfigureRouting(ServerRoutingTable serverRoutingTable)
@@ -29,12 +30,12 @@ namespace RunesWebApp
             // HomeController
             serverRoutingTable.Routes[HttpRequestMethod.Get]["/home/index"] =
                 request => new RedirectResult("/");
-            serverRoutingTable.Routes[HttpRequestMethod.Get]["/"] =
-                request => new HomeController().Index(request);
+            //serverRoutingTable.Routes[HttpRequestMethod.Get]["/"] =
+            //    request => new HomeController().Index(request);
 
             // UserController
-            serverRoutingTable.Routes[HttpRequestMethod.Get]["/users/login"] =
-                request => new UsersController().Login(request);
+            //serverRoutingTable.Routes[HttpRequestMethod.Get]["/users/login"] =
+            //    request => new UsersController().Login(request);
             serverRoutingTable.Routes[HttpRequestMethod.Get]["/users/register"] =
                 request => new UsersController().Register(request);
             serverRoutingTable.Routes[HttpRequestMethod.Get]["/users/logout"] =

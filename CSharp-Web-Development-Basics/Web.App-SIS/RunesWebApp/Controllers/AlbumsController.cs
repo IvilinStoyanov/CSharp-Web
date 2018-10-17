@@ -52,7 +52,7 @@ namespace RunesWebApp.Controllers
                 this.ViewBag["albumsList"] = "There are currently no albums.";
             }
 
-            return this.View();
+            return this.ViewMethod();
         }
 
         public IHttpResponse Create(IHttpRequest request)
@@ -61,7 +61,7 @@ namespace RunesWebApp.Controllers
             {
                 return new RedirectResult("/users/login");
             }
-            return this.View("Create");
+            return this.ViewMethod("Create");
         }
 
         //post album/create
@@ -73,7 +73,7 @@ namespace RunesWebApp.Controllers
             if (this.albumsService.ContainsAlbum(name, cover))
             {
                 this.ViewBag["error"] = AlbumExists;
-                return this.View("Error");
+                return this.ViewMethod("Error");
             }
 
             this.albumsService.AddAlbum(name, cover);
@@ -91,7 +91,7 @@ namespace RunesWebApp.Controllers
             if (!request.QueryData.ContainsKey("id"))
             {
                 this.ViewBag["Error"] = AlbumDoesNotExist;
-                return this.View("Error");
+                return this.ViewMethod("Error");
             }
 
             var albumId = int.Parse(request.QueryData["id"].ToString());
@@ -100,7 +100,7 @@ namespace RunesWebApp.Controllers
             if (album == null)
             {
                 this.ViewBag["Error"] = AlbumDoesNotExist;
-                return this.View("Error");
+                return this.ViewMethod("Error");
             }
 
             this.ViewBag["Cover"] = $"<img src=\"{album.Cover}\" alt=\"{album.Name}\" class=\"img-fluid\">";
@@ -127,7 +127,7 @@ namespace RunesWebApp.Controllers
                 this.ViewBag["AllTracks"] = NoTracks;
             }
 
-            return this.View("Details");
+            return this.ViewMethod("Details");
         }
     }
 }
