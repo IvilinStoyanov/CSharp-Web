@@ -1,4 +1,6 @@
 # CSharp-Web
+![softuni-icon](https://softuni.bg/Files/OpenCourses/softunilogo%20(2).png "Software University")
+***
 
 ## Introduction to the Course
 
@@ -24,4 +26,4 @@
 - WORKSHOP
 - EXAM PREPARATION I, II , III
 
-source project [github repository](https://github.com/SoftUni-CSharp-Web-Development/SIS)
+source project - [github repository](https://github.com/SoftUni-CSharp-Web-Development/SIS)
