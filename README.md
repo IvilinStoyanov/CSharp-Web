@@ -1,7 +1,9 @@
-# ![softuni-icon](https://softuni.bg/Files/OpenCourses/softunilogo%20(2).png "Software University") CSharp-Web
+| ![softuni-icon](https://softuni.bg/Files/OpenCourses/softunilogo%20(2).png "Software University") | CSharp-Web |
+| --- | --- |
+| ## Introduction to the Course |
 ***
 
-## Introduction to the Course
+
 
 
 - HTML & CSS
