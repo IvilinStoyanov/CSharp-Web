@@ -1,5 +1,4 @@
-﻿using SIS.Framework.ActionsResults;
-using SIS.Framework.ActionsResults.Base.Contracts;
+﻿using SIS.Framework.ActionsResults.Base.Contracts;
 using SIS.Framework.ActionsResults.Contracts;
 using SIS.Framework.Attributes.Methods.Base;
 using SIS.Framework.Controllers;
@@ -57,6 +56,7 @@ namespace SIS.Framework.Routes
 
             return this.PrepareResponse(actionResult);
         }
+
         private Controller GetController(string controllerName, IHttpRequest request)
         {
             if (string.IsNullOrWhiteSpace(controllerName))
@@ -142,7 +142,7 @@ namespace SIS.Framework.Routes
             if (actionResult is IRedirectable)
             {
                 // TODO: Check if it's working
-                return new WebServer.Results.RedirectResult(invokationResult);
+                return new RedirectResult(invokationResult);
             }
 
             throw new InvalidOperationException("Type of result is not supported");
@@ -249,7 +249,8 @@ namespace SIS.Framework.Routes
                         request,
                         bindingModelProperty.Name.ToLower());
 
-                    bindingModelProperty.SetValue(
+                    bindingModelProperty
+                        .SetValue(
                         bindingModelInstance,
                         Convert.ChangeType(value, bindingModelProperty.PropertyType));
                 }
