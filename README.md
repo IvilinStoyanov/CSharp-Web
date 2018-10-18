@@ -1,10 +1,7 @@
-| ![softuni-icon](https://softuni.bg/Files/OpenCourses/softunilogo%20(2).png "Software University") | CSharp-Web |
-| --- |
-## | Introduction to the Course |
+| ![softuni-icon](https://softuni.bg/Files/OpenCourses/softunilogo%20(2).png "Software University") | Course     |
+|:-------------------------------------------------------------------------------------------------:|------------|
+|                             [Software University](https://softuni.bg/)                            | CSharp-Web |
 ***
-
-
-
 
 - HTML & CSS
 - WEB SERVER - HTTP PROTOCOL
