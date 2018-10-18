@@ -2,6 +2,7 @@
 
 ## Introduction to the Course
 
+
 - HTML & CSS
 - WEB SERVER - HTTP PROTOCOL
 - EXERCISE: WEB SERVER - HTTP PROTOCОL
@@ -22,3 +23,8 @@
 - WORKSHOP - MVC EXTENDED
 - WORKSHOP
 - EXAM PREPARATION I, II , III
+
+```bash
+Software University - https://softuni.bg/
+```bash
+source project - https://github.com/SoftUni-CSharp-Web-Development/SIS
