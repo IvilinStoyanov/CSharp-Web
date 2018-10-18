@@ -24,5 +24,4 @@
 - WORKSHOP
 - EXAM PREPARATION I, II , III
 
-```bash
 source project [github repository](https://github.com/SoftUni-CSharp-Web-Development/SIS)
