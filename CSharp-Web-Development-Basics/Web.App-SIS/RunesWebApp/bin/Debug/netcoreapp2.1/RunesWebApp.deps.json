@@ -11,6 +11,7 @@
           "Microsoft.EntityFrameworkCore.Design": "2.1.4",
           "Microsoft.EntityFrameworkCore.Proxies": "2.1.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.4",
+          "SIS.Framework": "1.0.0",
           "SIS.HTTP": "1.0.0",
           "SIS.WebServer": "1.0.0"
         },
@@ -745,6 +746,14 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "SIS.Framework/1.0.0": {
+        "dependencies": {
+          "SIS.WebServer": "1.0.0"
+        },
+        "runtime": {
+          "SIS.Framework.dll": {}
+        }
+      },
       "SIS.HTTP/1.0.0": {
         "runtime": {
           "SIS.HTTP.dll": {}
@@ -1290,6 +1299,11 @@
       "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "SIS.Framework/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "SIS.HTTP/1.0.0": {
       "type": "project",

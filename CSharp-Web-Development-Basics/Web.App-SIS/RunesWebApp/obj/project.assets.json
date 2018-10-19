@@ -1282,6 +1282,19 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
+      "SIS.Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "SIS.WebServer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SIS.Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SIS.Framework.dll": {}
+        }
+      },
       "SIS.HTTP/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -4785,6 +4798,11 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
+    "SIS.Framework/1.0.0": {
+      "type": "project",
+      "path": "../SIS.Framework/SIS.Framework.csproj",
+      "msbuildProject": "../SIS.Framework/SIS.Framework.csproj"
+    },
     "SIS.HTTP/1.0.0": {
       "type": "project",
       "path": "../SIS.HTTP/SIS.HTTP.csproj",
@@ -4802,6 +4820,7 @@
       "Microsoft.EntityFrameworkCore.Proxies >= 2.1.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.4",
       "Microsoft.NETCore.App >= 2.1.0",
+      "SIS.Framework >= 1.0.0",
       "SIS.HTTP >= 1.0.0",
       "SIS.WebServer >= 1.0.0"
     ]
@@ -4836,6 +4855,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\Web.App-SIS\\SIS.Framework\\SIS.Framework.csproj": {
+              "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\Web.App-SIS\\SIS.Framework\\SIS.Framework.csproj"
+            },
             "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\Web.App-SIS\\SIS.HTTP\\SIS.HTTP.csproj": {
               "projectPath": "D:\\GitHub\\CSharp-Web\\CSharp-Web-Development-Basics\\Web.App-SIS\\SIS.HTTP\\SIS.HTTP.csproj"
             },

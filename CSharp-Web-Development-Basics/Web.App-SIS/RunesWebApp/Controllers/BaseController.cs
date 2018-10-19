@@ -8,10 +8,11 @@ using System.Runtime.CompilerServices;
 using SIS.HTTP.Enums;
 using SIS.HTTP.Cookies;
 using System.Collections.Generic;
+using SIS.Framework.Controllers;
 
 namespace RunesWebApp.Controllers
 {
-    public abstract class BaseController
+    public abstract class BaseController : Controller
     {
         private const string RootDirectoryRelativePath = "../../../";
 
@@ -58,7 +59,7 @@ namespace RunesWebApp.Controllers
         private string GetCurrentControllerName() =>
             this.GetType().Name.Replace(ControllerDefaultName, string.Empty);
 
-        protected IHttpResponse View([CallerMemberName] string viewName = "")
+        protected IHttpResponse ViewMethod([CallerMemberName] string viewName = "")
         {
             
             var layoutView = RootDirectoryRelativePath +
