@@ -1,6 +1,7 @@
 ﻿using RunesWebApp.Extensions;
 using RunesWebApp.Models;
 using RunesWebApp.Services;
+using SIS.Framework.ActionsResults.Base.Contracts;
 using SIS.HTTP.Enums;
 using SIS.HTTP.Requests;
 using SIS.HTTP.Responses;
@@ -26,6 +27,8 @@ namespace RunesWebApp.Controllers
             this.albumsService = new AlbumService();
             this.trackService = new TrackService();
         }
+
+        public IActionResult All() => this.View();
 
         public IHttpResponse All(IHttpRequest request)
         {

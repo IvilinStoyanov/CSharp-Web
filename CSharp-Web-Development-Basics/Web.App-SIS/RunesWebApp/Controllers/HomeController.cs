@@ -22,6 +22,11 @@ namespace RunesWebApp.Controllers
         {
             return this.View();
         }
+
+        public IActionResult Indexlog(IndexViewModel model)
+        {
+            return this.View();
+        }
     }
 }
 
