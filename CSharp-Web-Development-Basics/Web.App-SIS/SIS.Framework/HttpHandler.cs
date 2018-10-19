@@ -44,7 +44,7 @@ namespace SIS.Framework
             {
                 var requestPathExtension = requestPath
                     .Substring(requestPath.LastIndexOf('.'));
-                return GlobalConstants.ResourcesExtensions.Contains(requestPathExtension);
+                return GlobalConstants.ResourceExtensions.Contains(requestPathExtension);
             }
             return false;
         }

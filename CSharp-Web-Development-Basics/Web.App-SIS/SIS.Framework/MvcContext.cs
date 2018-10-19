@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SIS.Framework
+﻿namespace SIS.Framework
 {
     public class MvcContext
     {
@@ -18,8 +14,14 @@ namespace SIS.Framework
 
         public string ControllersFolder { get; set; } = "Controllers";
 
-        public string ViewsFolder { get; set; } = "Views";
+        public string ViewsFolderName { get; set; } = "Views";
 
         public string ModelsFolder { get; set; } = "Models";
+
+        public string ResourceFolderName { get; set; } = "Resources";
+
+        public string LayoutViewName { get; set; } = "_Layout";
+
+        public string RootDirectoryRelativePath { get; set; } = "../../..";
     }
 }

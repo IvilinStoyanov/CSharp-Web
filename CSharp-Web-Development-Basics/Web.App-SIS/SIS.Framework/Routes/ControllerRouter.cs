@@ -2,6 +2,7 @@
 using SIS.Framework.ActionsResults.Contracts;
 using SIS.Framework.Attributes.Methods.Base;
 using SIS.Framework.Controllers;
+using SIS.Framework.Services.Contracts;
 using SIS.HTTP.Enums;
 using SIS.HTTP.Extensions;
 using SIS.HTTP.Requests;
@@ -18,6 +19,13 @@ namespace SIS.Framework.Routes
 {
     public class ControllerRouter : IHttpHandler
     {
+        private readonly IDependencyContainer dependencyContainer;
+
+        public ControllerRouter(IDependencyContainer dependencyContainer)
+        {
+            this.dependencyContainer = dependencyContainer;
+        }
+
         public IHttpResponse Handle(IHttpRequest request)
         {
             var controllerName = string.Empty;
@@ -40,7 +48,7 @@ namespace SIS.Framework.Routes
             }
 
             //Controller
-            var controller = this.GetController(controllerName, request);
+            var controller = this.GetController(controllerName);
 
             //Action
             var action = this.GetAction(requestMethod, controller, actionName);
@@ -49,7 +57,7 @@ namespace SIS.Framework.Routes
             {
                 throw new NullReferenceException();
             }
-
+            controller.Request = request;
             object[] actionParameters = this.MapActionParameters(action, request, controller);
 
             var actionResult = InvokeAction(controller, action, actionParameters);
@@ -57,7 +65,7 @@ namespace SIS.Framework.Routes
             return this.PrepareResponse(actionResult);
         }
 
-        private Controller GetController(string controllerName, IHttpRequest request)
+        private Controller GetController(string controllerName)
         {
             if (string.IsNullOrWhiteSpace(controllerName))
             {
@@ -71,7 +79,7 @@ namespace SIS.Framework.Routes
                 MvcContext.Get.ControllerSuffix);
 
             var controllerType = Type.GetType(fullyQualifiedControllerName);
-            var controller = (Controller)Activator.CreateInstance(controllerType);
+            var controller = (Controller)this.dependencyContainer.CreateInstance(controllerType);
             return controller;
         }
 
@@ -141,7 +149,6 @@ namespace SIS.Framework.Routes
 
             if (actionResult is IRedirectable)
             {
-                // TODO: Check if it's working
                 return new RedirectResult(invokationResult);
             }
 
@@ -211,6 +218,8 @@ namespace SIS.Framework.Routes
 
                     if (!validationAttribute.IsValid(propertyValue))
                     {
+                        // password -> "error msg"
+                        // property -> error
                         return false;
                     }
                 }
@@ -249,8 +258,7 @@ namespace SIS.Framework.Routes
                         request,
                         bindingModelProperty.Name.ToLower());
 
-                    bindingModelProperty
-                        .SetValue(
+                    bindingModelProperty.SetValue(
                         bindingModelInstance,
                         Convert.ChangeType(value, bindingModelProperty.PropertyType));
                 }
