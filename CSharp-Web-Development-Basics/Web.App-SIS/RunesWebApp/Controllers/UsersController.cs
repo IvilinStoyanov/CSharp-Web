@@ -1,117 +1,64 @@
-﻿using RunesWebApp.Models;
+﻿using SIS.Framework.Controllers;
+using RunesWebApp.Services.Contracts;
+using SIS.Framework.ActionsResults.Base.Contracts;
+using SIS.Framework.Attributes.Methods;
+using RunesWebApp.ViewModels;
 using RunesWebApp.Services;
-using System;
-using SIS.HTTP.Requests;
-using SIS.HTTP.Responses;
-using SIS.WebServer.Results;
-using System.Linq;
-using SIS.HTTP.Enums;
 
 namespace RunesWebApp.Controllers
 {
-    public class UsersController : BaseController
+    public class UsersController : Controller
     {
-        private readonly HashService hashService;
+        private readonly IUsersService usersService;
 
-        public UsersController()
+        public UsersController(IUsersService usersService)
         {
-            this.hashService = new HashService();
+            this.usersService = usersService;
         }
 
-        public IHttpResponse Login(IHttpRequest request) => this.View();
-
-        public IHttpResponse DoLogin(IHttpRequest request)
+        public IActionResult Login() => this.View();
+        public IActionResult Register() => this.View();
+    
+        [HttpPost]
+        public IActionResult Register(LoginViewModel model)
         {
-            var username = request.FormData["username"].ToString();
-            var password = request.FormData["password"].ToString();
-
-            var hashedPassword = this.hashService.Hash(password);
-
-            var user = this.Db.Users
-                .FirstOrDefault(u => u.Username == username &&
-                    u.HashedPassoword == hashedPassword);
-
-            if (user == null)
+            if (!ModelState.IsValid.HasValue || !ModelState.IsValid.Value)
             {
-                return new RedirectResult("/login");
+                return this.RedirectToAction("/users/register");
             }
+            var user = this.usersService.CreateUser(
+                model.Username,
+                model.Password,
+                model.Password);
 
-            var response = new RedirectResult("/home/index");
-            this.SignInUser(username, response, request);
-            return response;
+            return this.RedirectToAction("/home/index");          
         }
 
-        public IHttpResponse Register(IHttpRequest request) => this.View();
-
-        public IHttpResponse Logout(IHttpRequest request)
+        [HttpPost]
+        public IActionResult Login(LoginViewModel model)
         {
-            if (!request.Session.ContainsParameter("username"))
+            if (!ModelState.IsValid.HasValue || !ModelState.IsValid.Value)
             {
-                return new RedirectResult("/");
+                return this.RedirectToAction("/users/login");
             }
 
-            request.Session.ClearParameters();
-            return new RedirectResult("/");
-        }
+            var userExists = this.usersService
+                .ExistsByUsernameAndPassword(
+                    model.Username,
+                    model.Password);
 
-        public IHttpResponse DoRegister(IHttpRequest request)
-        {
-            var userName = request.FormData["username"].ToString().Trim();
-            var password = request.FormData["password"].ToString();
-            var confirmPassword = request.FormData["confirmPassword"].ToString();
-
-            // Validate
-            //if (string.IsNullOrWhiteSpace(userName) || userName.Length < 4)
-            //{
-            //    return new BadRequestResult("Please provide valid username with length of 4 or more characters.");
-            //}
-
-            //if (this.Context.Users.Any(x => x.Username == userName))
-            //{
-            //    return new BadRequestResult("User with the same name already exists.");
-            //}
-
-            //if (string.IsNullOrWhiteSpace(password) || password.Length < 6)
-            //{
-            //    return new BadRequestResult("Please provide password of length 6 or more.");
-            //}
-
-            if (password != confirmPassword)
+            if (!userExists)
             {
-                return new BadRequestResult(
-                    "Passwords do not match.",
-                    HttpResponseStatusCode.SeeOther);
+                return this.RedirectToAction("/users/login");
             }
 
-            // Hash password
-            var hashedPassword = this.hashService.Hash(password);
+            this.Request.Session.AddParameter("username", model.Username);
+            
 
-            // Create user
-            var user = new User
-            {
-                Username = userName,
-                HashedPassoword = hashedPassword,
-            };
-            this.Db.Users.Add(user);
-
-            try
-            {
-                this.Db.SaveChanges();
-            }
-            catch (Exception e)
-            {
-                // TODO: Log error
-                return new BadRequestResult(
-                    e.Message,
-                    HttpResponseStatusCode.InternalServerError);
-            }
-
-            var response = new RedirectResult("/");
-            this.SignInUser(userName, response, request);
-
-            // Redirect
-            return response;
+            return this.RedirectToAction("/home/indexlog");
         }
     }
 }
+
+
 

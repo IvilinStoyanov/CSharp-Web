@@ -9,10 +9,11 @@ using System;
 using System.IO;
 using System.Linq;
 
-namespace SIS.WebServer.Api
+namespace SIS.Framework
 {
     public class HttpHandler : IHttpHandler
     {
+        private const string RootDirectoryRelativePath = "../../..";
         private ServerRoutingTable serverRoutingTable;
 
         public HttpHandler(ServerRoutingTable routingTable)
@@ -33,7 +34,7 @@ namespace SIS.WebServer.Api
                 return new HttpResponse(HttpResponseStatusCode.NotFound);
             }
 
-            return this.serverRoutingTable.Routes[httpRequest.RequestMethod][httpRequest.Path].Invoke(httpRequest); 
+            return this.serverRoutingTable.Routes[httpRequest.RequestMethod][httpRequest.Path].Invoke(httpRequest);
         }
 
         private bool IsResourceRequest(IHttpRequest httpRequest)
@@ -43,11 +44,10 @@ namespace SIS.WebServer.Api
             {
                 var requestPathExtension = requestPath
                     .Substring(requestPath.LastIndexOf('.'));
-                return GlobalConstants.ResourcesExtensions.Contains(requestPathExtension);
+                return GlobalConstants.ResourceExtensions.Contains(requestPathExtension);
             }
             return false;
         }
-
         private IHttpResponse HandleRequestResponse(string httpRequestPath)
         {
             var indexOfStartOfExtension = httpRequestPath.LastIndexOf('.');
@@ -60,10 +60,10 @@ namespace SIS.WebServer.Api
                 .Substring(
                     indexOfStartOfNameOfResource);
 
-            var resourcePath = "../../.."
-                + "/Resources"
-                + $"/{requestPathExtension.Substring(1)}"
-                + resourceName;
+            var resourcePath = RootDirectoryRelativePath
+                               + "/Resources"
+                               + $"/{requestPathExtension.Substring(1)}"
+                               + resourceName;
 
             if (!File.Exists(resourcePath))
             {
