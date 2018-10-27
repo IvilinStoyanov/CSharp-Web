@@ -34,3 +34,4 @@ D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\Services\obj\Debu
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfo.cs
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\Services\obj\Debug\netcoreapp2.1\Services.dll
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\Services\obj\Debug\netcoreapp2.1\Services.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\Web.App-SIS\Services\obj\Debug\netcoreapp2.1\Services.csprojAssemblyReference.cache
