@@ -6,3 +6,4 @@ D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramew
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.AssemblyInfo.cs
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.dll
 D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.csprojAssemblyReference.cache

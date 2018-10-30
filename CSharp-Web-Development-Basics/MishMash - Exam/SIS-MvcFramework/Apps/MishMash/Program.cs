@@ -1,4 +1,4 @@
-﻿using System;
+﻿using SIS.MvcFramework;
 
 namespace MishMash
 {
@@ -6,7 +6,7 @@ namespace MishMash
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            WebHost.Start(new Startup());
         }
     }
 }
