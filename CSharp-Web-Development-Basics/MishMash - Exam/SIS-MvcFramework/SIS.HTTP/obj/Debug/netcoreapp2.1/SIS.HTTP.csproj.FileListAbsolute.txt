@@ -1,0 +1,8 @@
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\SIS.HTTP\bin\Debug\netcoreapp2.1\SIS.HTTP.deps.json
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\SIS.HTTP\bin\Debug\netcoreapp2.1\SIS.HTTP.dll
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\SIS.HTTP\bin\Debug\netcoreapp2.1\SIS.HTTP.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.csproj.CoreCompileInputs.cache
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.AssemblyInfoInputs.cache
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.AssemblyInfo.cs
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.dll
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.pdb

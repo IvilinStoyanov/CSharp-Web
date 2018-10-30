@@ -1,0 +1,10 @@
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\Apps\MishMash\bin\Debug\netcoreapp2.1\MishMash.deps.json
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\Apps\MishMash\bin\Debug\netcoreapp2.1\MishMash.runtimeconfig.json
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\Apps\MishMash\bin\Debug\netcoreapp2.1\MishMash.runtimeconfig.dev.json
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\Apps\MishMash\bin\Debug\netcoreapp2.1\MishMash.dll
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\Apps\MishMash\obj\Debug\netcoreapp2.1\MishMash.csproj.CoreCompileInputs.cache
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\Apps\MishMash\obj\Debug\netcoreapp2.1\MishMash.AssemblyInfoInputs.cache
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\Apps\MishMash\obj\Debug\netcoreapp2.1\MishMash.AssemblyInfo.cs
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\Apps\MishMash\bin\Debug\netcoreapp2.1\MishMash.pdb
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\Apps\MishMash\obj\Debug\netcoreapp2.1\MishMash.dll
+D:\GitHub\CSharp-Web\CSharp-Web-Development-Basics\MishMash - Exam\SIS-MvcFramework\Apps\MishMash\obj\Debug\netcoreapp2.1\MishMash.pdb
