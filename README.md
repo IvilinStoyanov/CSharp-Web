@@ -1,6 +1,6 @@
 | ![softuni-icon](https://softuni.bg/Files/OpenCourses/softunilogo%20(2).png "Software University") | Course     |
 |:-------------------------------------------------------------------------------------------------:|------------|
-|                             [Software University](https://softuni.bg/)                            | CSharp-Web |
+|                             [Software University](https://softuni.bg/)                            | C# - Web |
 ***
 
 ###### INTRODUCTION TO THE COURSE
