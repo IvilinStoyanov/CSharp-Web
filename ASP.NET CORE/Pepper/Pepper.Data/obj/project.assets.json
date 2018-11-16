@@ -995,6 +995,19 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
+      },
+      "Pepper.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.Extensions.Identity.Stores": "2.1.6"
+        },
+        "compile": {
+          "bin/placeholder/Pepper.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pepper.Models.dll": {}
+        }
       }
     }
   },
@@ -3638,6 +3651,11 @@
         "system.threading.tasks.4.0.11.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "Pepper.Models/1.0.0": {
+      "type": "project",
+      "path": "../Pepper.Models/Pepper.Models.csproj",
+      "msbuildProject": "../Pepper.Models/Pepper.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3647,7 +3665,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.4",
       "Microsoft.EntityFrameworkCore.Tools >= 2.1.4",
       "Microsoft.Extensions.Identity.Stores >= 2.1.6",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Pepper.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3679,7 +3698,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\GitHub\\CSharp-Web\\ASP.NET CORE\\Pepper\\Pepper.Models\\Pepper.Models.csproj": {
+              "projectPath": "D:\\GitHub\\CSharp-Web\\ASP.NET CORE\\Pepper\\Pepper.Models\\Pepper.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

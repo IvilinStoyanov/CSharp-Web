@@ -35,3 +35,5 @@ D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Web\obj\Debug\netcoreapp2.1\Pepp
 D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Web\obj\Debug\netcoreapp2.1\Pepper.Web.csprojAssemblyReference.cache
 D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Web\bin\Debug\netcoreapp2.1\Pepper.Data.dll
 D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Web\bin\Debug\netcoreapp2.1\Pepper.Data.pdb
+D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Web\bin\Debug\netcoreapp2.1\Pepper.Models.dll
+D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Web\bin\Debug\netcoreapp2.1\Pepper.Models.pdb

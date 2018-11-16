@@ -11,3 +11,6 @@ D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Data\obj\Debug\netcoreapp2.1\Pep
 D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Data\bin\Debug\netcoreapp2.1\Pepper.Data.pdb
 D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Data\obj\Debug\netcoreapp2.1\Pepper.Data.dll
 D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Data\obj\Debug\netcoreapp2.1\Pepper.Data.pdb
+D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Data\obj\Debug\netcoreapp2.1\Pepper.Data.csprojAssemblyReference.cache
+D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Data\bin\Debug\netcoreapp2.1\Pepper.Models.dll
+D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Data\bin\Debug\netcoreapp2.1\Pepper.Models.pdb

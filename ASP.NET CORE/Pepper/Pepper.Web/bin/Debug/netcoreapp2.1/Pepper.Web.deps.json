@@ -676,13 +676,25 @@
           "Microsoft.EntityFrameworkCore": "2.1.4",
           "Microsoft.EntityFrameworkCore.Relational": "2.1.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.4",
-          "Microsoft.Extensions.Identity.Stores": "2.1.6"
+          "Microsoft.Extensions.Identity.Stores": "2.1.6",
+          "Pepper.Models": "1.0.0"
         },
         "runtime": {
           "Pepper.Data.dll": {}
         },
         "compile": {
           "Pepper.Data.dll": {}
+        }
+      },
+      "Pepper.Models/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Identity.Stores": "2.1.6"
+        },
+        "runtime": {
+          "Pepper.Models.dll": {}
+        },
+        "compile": {
+          "Pepper.Models.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3780,6 +3792,11 @@
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
     },
     "Pepper.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Pepper.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
