@@ -1,36 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Pepper.Data.Web.Data;
 using Pepper.Web.Models;
+using Pepper.Web.ViewModels.Home;
 
 namespace Pepper.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private PepperDbContext dbContext;
+
+        public HomeController(PepperDbContext dbContext)
+        {
+            this.dbContext = dbContext;
+        }
+
         public IActionResult Index()
         {
-            return View();
-        }
+            if (this.User.Identity.IsAuthenticated)
+            {
+                var viewModel = new LoggedInViewModel
+                {
+                    Products = dbContext.Products.Select(p =>
+                        new ProductIndexDto
+                        {
+                            Id = p.Id,
+                            Name = p.Name,
+                            ShortDescription = p.Description.Substring(0, 37) + "...",
+                            Price = p.Price
+                        }).ToList()
+                };
 
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
+                return this.View("IndexLoggedIn", viewModel);
+            }
             return View();
         }
 

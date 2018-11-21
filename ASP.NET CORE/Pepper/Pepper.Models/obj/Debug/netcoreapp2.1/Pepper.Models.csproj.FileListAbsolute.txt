@@ -1,8 +1,8 @@
-D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Models\obj\Debug\netcoreapp2.1\Pepper.Models.csproj.CoreCompileInputs.cache
-D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Models\obj\Debug\netcoreapp2.1\Pepper.Models.AssemblyInfoInputs.cache
-D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Models\obj\Debug\netcoreapp2.1\Pepper.Models.AssemblyInfo.cs
 D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Models\bin\Debug\netcoreapp2.1\Pepper.Models.deps.json
 D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Models\bin\Debug\netcoreapp2.1\Pepper.Models.dll
 D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Models\bin\Debug\netcoreapp2.1\Pepper.Models.pdb
+D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Models\obj\Debug\netcoreapp2.1\Pepper.Models.csproj.CoreCompileInputs.cache
+D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Models\obj\Debug\netcoreapp2.1\Pepper.Models.AssemblyInfoInputs.cache
+D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Models\obj\Debug\netcoreapp2.1\Pepper.Models.AssemblyInfo.cs
 D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Models\obj\Debug\netcoreapp2.1\Pepper.Models.dll
 D:\GitHub\CSharp-Web\ASP.NET CORE\Pepper\Pepper.Models\obj\Debug\netcoreapp2.1\Pepper.Models.pdb
