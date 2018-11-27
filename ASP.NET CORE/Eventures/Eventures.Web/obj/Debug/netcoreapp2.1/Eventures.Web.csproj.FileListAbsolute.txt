@@ -18,10 +18,7 @@ D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.
 D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Eventures.Web.TagHelpers.output.cache
 D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Eventures.Web.RazorCoreGenerate.cache
 D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
-D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
-D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
@@ -35,3 +32,11 @@ D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.
 D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Eventures.Web.csproj.CopyComplete
 D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Eventures.Web.dll
 D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Eventures.Web.pdb
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\bin\Debug\netcoreapp2.1\Eventures.Models.dll
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\bin\Debug\netcoreapp2.1\Eventures.Models.pdb
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Users\Login.g.cshtml.cs
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\bin\Debug\netcoreapp2.1\Eventures.Services.dll
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\bin\Debug\netcoreapp2.1\Eventures.Services.pdb
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Users\Register.g.cshtml.cs
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_OrderPartial.g.cshtml.cs
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_EventPartial.g.cshtml.cs

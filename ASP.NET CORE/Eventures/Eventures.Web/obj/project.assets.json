@@ -4620,6 +4620,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "Eventures.Models": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.1.4",
           "Microsoft.EntityFrameworkCore.Relational": "2.1.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.4",
@@ -4630,6 +4631,32 @@
         },
         "runtime": {
           "bin/placeholder/Eventures.Data.dll": {}
+        }
+      },
+      "Eventures.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.Extensions.Identity.Stores": "2.1.6"
+        },
+        "compile": {
+          "bin/placeholder/Eventures.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Eventures.Models.dll": {}
+        }
+      },
+      "Eventures.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Eventures.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Eventures.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Eventures.Services.dll": {}
         }
       }
     }
@@ -12229,11 +12256,22 @@
       "type": "project",
       "path": "../Eventures.Data/Eventures.Data.csproj",
       "msbuildProject": "../Eventures.Data/Eventures.Data.csproj"
+    },
+    "Eventures.Models/1.0.0": {
+      "type": "project",
+      "path": "../Eventures.Models/Eventures.Models.csproj",
+      "msbuildProject": "../Eventures.Models/Eventures.Models.csproj"
+    },
+    "Eventures.Services/1.0.0": {
+      "type": "project",
+      "path": "../Eventures.Services/Eventures.Services.csproj",
+      "msbuildProject": "../Eventures.Services/Eventures.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Eventures.Data >= 1.0.0",
+      "Eventures.Services >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.4"
@@ -12271,6 +12309,9 @@
           "projectReferences": {
             "D:\\GitHub\\CSharp-Web\\ASP.NET CORE\\Eventures\\Eventures.Data\\Eventures.Data.csproj": {
               "projectPath": "D:\\GitHub\\CSharp-Web\\ASP.NET CORE\\Eventures\\Eventures.Data\\Eventures.Data.csproj"
+            },
+            "D:\\GitHub\\CSharp-Web\\ASP.NET CORE\\Eventures\\Eventures.Services\\Eventures.Services.csproj": {
+              "projectPath": "D:\\GitHub\\CSharp-Web\\ASP.NET CORE\\Eventures\\Eventures.Services\\Eventures.Services.csproj"
             }
           }
         }

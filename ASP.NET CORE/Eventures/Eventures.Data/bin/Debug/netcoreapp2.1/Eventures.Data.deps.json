@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v2.1": {
       "Eventures.Data/1.0.0": {
         "dependencies": {
+          "Eventures.Models": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.1.4",
           "Microsoft.EntityFrameworkCore.Relational": "2.1.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.4",
@@ -575,6 +576,14 @@
           "System.Runtime": "4.1.0"
         }
       },
+      "Eventures.Models/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Identity.Stores": "2.1.6"
+        },
+        "runtime": {
+          "Eventures.Models.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/2.1.1.0": {
         "runtime": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {
@@ -1010,6 +1019,11 @@
       "sha512": "sha512-k1S4Gc6IGwtHGT8188RSeGaX86Qw/wnrgNLshJvsdNUOPP9etMmo8S07c+UlOAx4K/xLuN9ivA1bD0LVurtIxQ==",
       "path": "system.threading.tasks/4.0.11",
       "hashPath": "system.threading.tasks.4.0.11.nupkg.sha512"
+    },
+    "Eventures.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/2.1.1.0": {
       "type": "reference",

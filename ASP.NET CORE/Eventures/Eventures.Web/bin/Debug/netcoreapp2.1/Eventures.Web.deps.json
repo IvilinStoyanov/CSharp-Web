@@ -25,6 +25,7 @@
       "Eventures.Web/1.0.0": {
         "dependencies": {
           "Eventures.Data": "1.0.0",
+          "Eventures.Services": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.4"
@@ -673,6 +674,7 @@
       },
       "Eventures.Data/1.0.0": {
         "dependencies": {
+          "Eventures.Models": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.1.4",
           "Microsoft.EntityFrameworkCore.Relational": "2.1.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.4",
@@ -683,6 +685,28 @@
         },
         "compile": {
           "Eventures.Data.dll": {}
+        }
+      },
+      "Eventures.Models/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Identity.Stores": "2.1.6"
+        },
+        "runtime": {
+          "Eventures.Models.dll": {}
+        },
+        "compile": {
+          "Eventures.Models.dll": {}
+        }
+      },
+      "Eventures.Services/1.0.0": {
+        "dependencies": {
+          "Eventures.Models": "1.0.0"
+        },
+        "runtime": {
+          "Eventures.Services.dll": {}
+        },
+        "compile": {
+          "Eventures.Services.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3780,6 +3804,16 @@
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
     },
     "Eventures.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Eventures.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Eventures.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

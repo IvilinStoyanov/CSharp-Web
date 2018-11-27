@@ -12,6 +12,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Eventures.Web.Data;
+using Eventures.Models;
+using Eventures.Services.Contracts;
+using Eventures.Services;
 
 namespace Eventures.Web
 {
@@ -35,12 +38,40 @@ namespace Eventures.Web
             });
 
             services.AddDbContext<EventuresDbContext>(options =>
+            {
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddEntityFrameworkStores<EventuresDbContext>();
+                    Configuration.GetConnectionString("DefaultConnection"));
+            });
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.SignIn.RequireConfirmedEmail = false;
+            });
+
+            services.AddIdentity<EventuresUser, IdentityRole>(options =>
+            {
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequiredLength = 1;
+            })
+            .AddDefaultTokenProviders()
+            .AddEntityFrameworkStores<EventuresDbContext>();
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LogoutPath = "/Users/Logout";
+                options.LoginPath = "/Users/Login";
+                options.AccessDeniedPath = "/Users/Login";
+                options.SlidingExpiration = true;
+            });
+
+            services.AddMvc()
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddScoped<IUsersService, UsersService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,12 +79,13 @@ namespace Eventures.Web
         {
             if (env.IsDevelopment())
             {
+                //app.UseExceptionHandler("/Error");
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
 

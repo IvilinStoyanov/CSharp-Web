@@ -23,8 +23,13 @@ using Eventures.Web.Models;
 
 #line default
 #line hidden
+#line 3 "D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Web\Views\_ViewImports.cshtml"
+using Eventures.Web.Models.Users;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3428bdf125acf975ca773013d873ea22e5318a61", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"955c83a921535fd23d0f2a3bcb85c5ddfa5ff6af", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
