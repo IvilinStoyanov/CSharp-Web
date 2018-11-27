@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Eventures.Web.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class EventuresDbContext : IdentityDbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public EventuresDbContext(DbContextOptions<EventuresDbContext> options)
             : base(options)
         {
         }
