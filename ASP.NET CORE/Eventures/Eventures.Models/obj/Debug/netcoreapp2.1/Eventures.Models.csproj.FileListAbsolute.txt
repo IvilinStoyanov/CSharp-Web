@@ -1,0 +1,14 @@
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.deps.json
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.dll
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Models.pdb
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Data.dll
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Models\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Models\bin\Debug\netcoreapp2.1\Eventures.Data.pdb
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Models\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.csprojAssemblyReference.cache
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.csproj.CoreCompileInputs.cache
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.AssemblyInfoInputs.cache
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.AssemblyInfo.cs
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.csproj.CopyComplete
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.dll
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Models\obj\Debug\netcoreapp2.1\Eventures.Models.pdb
