@@ -11,3 +11,4 @@ D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Data\obj\Debug\netcoreapp2
 D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Data\bin\Debug\netcoreapp2.1\Eventures.Data.pdb
 D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Data\obj\Debug\netcoreapp2.1\Eventures.Data.dll
 D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Data\obj\Debug\netcoreapp2.1\Eventures.Data.pdb
+D:\GitHub\CSharp-Web\ASP.NET CORE\Eventures\Eventures.Data\obj\Debug\netcoreapp2.1\Eventures.Data.csprojAssemblyReference.cache
